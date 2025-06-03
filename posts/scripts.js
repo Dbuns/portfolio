@@ -1,15 +1,5 @@
-// Sample posts
 let posts = [
 //    { title: 'Color Pallete', image: 'projects/post_01/thumbnail.png', category: 'python', link: 'projects/post_01/project_01.html', date: 'June 2025' },
-//    { title: 'Post 2', image: 'projects/post_2/thumbnail.png', category: 'category2', link: 'projects/post_2/main.html', date: 'March 2025' },
-//   { title: 'Post 3', image: 'projects/post_3/thumbnail.png', category: 'category1', link: 'projects/post_3/main.html', date: 'February 2025' },
-//    { title: 'Post 4', image: 'projects/post_4/thumbnail.png', category: 'category2', link: 'projects/post_4/main.html', date: 'January 2025' },
-//   { title: 'Post 5', image: 'projects/post_5/thumbnail.png', category: 'category1', link: 'projects/post_5/main.html', date: 'December 2024' },
-//    { title: 'Post 6', image: 'projects/post_6/thumbnail.png', category: 'category2', link: 'projects/post_6/main.html', date: 'November 2024' },
-//    { title: 'Post 7', image: 'projects/post_7/thumbnail.png', category: 'category1', link: 'projects/post_7/main.html', date: 'October 2024' },
-//    { title: 'Post 8', image: 'projects/post_8/thumbnail.png', category: 'category2', link: 'projects/post_8/main.html', date: 'September 2024' },
-//    { title: 'Post 9', image: 'projects/post_9/thumbnail.png', category: 'category1', link: 'projects/post_9/main.html', date: 'August 2024' },
-//    { title: 'Post 10', image: 'projects/post_10/thumbnail.png', category: 'category2', link: 'projects/post_10/main.html', date: 'July 2024' },
 ];
 
 let filteredPosts = [...posts];
