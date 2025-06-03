@@ -10,10 +10,9 @@ html, body {
     background-color: #fffff6;
     color: #333;
     width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    overflow-x: hidden;
 }
 
-/* Use <main> or inner sections for centering */
 body {
     display: flex;
     flex-direction: column;
@@ -32,7 +31,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2.5% 0px; /* This replaces margin tricks */
+    padding: 20px 2.5% 0px;
     width: 100%;
     box-sizing: border-box;
 }
