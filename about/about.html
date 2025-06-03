@@ -14,6 +14,16 @@
     <link rel="stylesheet" href="/shared/shared.css">
     <link rel="stylesheet" href="styles.css">
     <script defer src="/shared/shared.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Daniel Cunha",
+      "affiliation": "University of Twente",
+      "description": "Materials scientist focused on thin films, experimental design, and data analysis.",
+      "url": "https://www.danielcunha.net"
+    }
+    </script>
 </head>
 <body>
     <div id="shared-header"></div>
@@ -41,33 +51,13 @@
     <div class="contact-info">
         <p>Feel free to reach out!</p>
         <ul>
-           <li><a href="mailto:d.monteirocunha@utwente.nl" aria-label="Email Daniel"><img src="../assets/email.png" alt="Email"></a></li>
-           <li><a href="https://www.linkedin.com/in/danielcunha1/" target="_blank" rel="noopener noreferrer" aria-label="Daniel's LinkedIn"><img src="../assets/linkedin.png" alt="LinkedIn"></a></li>
-           <li><a href="https://github.com/Dbuns" target="_blank" rel="noopener noreferrer" aria-label="Daniel's GitHub"><img src="../assets/github.png" alt="GitHub"></a></li>
+           <li><a href="mailto:d.monteirocunha@utwente.nl" aria-label="Email Daniel"><img src="../assets/email.png" alt="Email icon"></a></li>
+           <li><a href="https://www.linkedin.com/in/danielcunha1/" target="_blank" rel="noopener noreferrer" aria-label="Daniel's LinkedIn"><img src="../assets/linkedin.png" alt="LinkedIn icon"></a></li>
+           <li><a href="https://github.com/Dbuns" target="_blank" rel="noopener noreferrer" aria-label="Daniel's GitHub"><img src="../assets/github.png" alt="GitHub icon"></a></li>
         </ul>
     </div>
     <script src="scripts.js"></script>
-          "affiliation": "University of Twente",
-      "description": "Materials scientist focused on thin films, experimental design, and data analysis."
-    }
-    </script>
-</head>
-<body>
-    <div id="shared-header"></div>
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        fetch('shared/header.html')
-            .then(res => res.text())
-            .then(html => document.getElementById('shared-header').innerHTML = html);
-    });
-    </script>
-    <main class="main-content">
-        <div class="welcome-message">
-            <p>Welcome to my page.</p>
-        </div>
-    </main>
-
-    <script src="scripts.js"></script>
-
+    <script data-goatcounter="https://dbuns.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
