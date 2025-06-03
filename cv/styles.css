@@ -18,7 +18,7 @@
 
   .cv-header h2 {
     font-size: 2.5em;
-    margin: 0 0 10px 0; /* <-- adds 10px of space below */
+    margin: 0 0 10px 0;
   }
 
   .cv-header p.bio {
@@ -95,9 +95,6 @@
   #highlights ul li::marker {
     font-size: 0.7em;
   }
-
-
-
 
 @media (max-width: 1300px){
     .cv-actions {
