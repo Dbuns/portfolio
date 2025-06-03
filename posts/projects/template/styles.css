@@ -1,0 +1,188 @@
+/* ========== POST BODY ========== */
+.post-body {
+    font-family: Consolas, monospace;
+    line-height: 1.6;
+    padding: 2rem;
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.post-section {
+    margin-bottom: 2rem;
+}
+
+/* ========== LINK STYLING ========== */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #8d9195;
+}
+
+.github-link {
+    color: #4078c0;
+    font-weight: bold;
+}
+
+.github-link:hover {
+    color: #305080;
+}
+
+/* ========== BOTTOM LINK ROW ========== */
+.link-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* ========== CODE BLOCKS ========== */
+.code-block {
+    position: relative;
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 1rem;
+    overflow-x: auto;
+    font-size: 0.95rem;
+    max-width: 100%;
+}
+
+.code-left { float: left; margin-right: 2rem; }
+.code-right { float: right; margin-left: 2rem; }
+.code-small { width: 40%; }
+.code-medium { width: 60%; }
+.code-large { width: 100%; }
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #444;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/* ========== COLLAPSIBLE SECTIONS ========== */
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.collapsible-content.open {
+    max-height: 1000px;
+}
+
+.collapse-toggle {
+    background: #eee;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    font-family: Consolas, monospace;
+    width: fit-content;
+}
+
+/* ========== FIGURES ========== */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+figure img {
+    border-radius: 6px;
+    height: auto;
+    max-width: 100%;
+}
+
+.fig-left { float: left; margin-right: 2rem; }
+.fig-right { float: right; margin-left: 2rem; }
+.fig-small img { width: 40%; }
+.fig-medium img { width: 60%; }
+.fig-large img { width: 100%; }
+
+figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* ========== QUOTE BLOCK ========== */
+.quote-block {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    padding: 2rem 0;
+    border-left: 4px solid #999;
+    background: none;
+}
+
+.quote-block footer {
+    margin-top: 1rem;
+    text-align: right;
+    font-style: normal;
+    font-family: Consolas, monospace;
+    font-size: 0.9rem;
+}
+
+/* ========== BACK BUTTON ========== */
+.back-btn {
+    background: transparent;
+    border: none;
+    font-family: Consolas, monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.back-btn::before {
+    content: '<';
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .post-body {
+        padding: 1rem;
+    }
+    .code-block {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
+    .copy-btn {
+        top: 6px;
+        right: 6px;
+        font-size: 0.75rem;
+    }
+    .collapse-toggle {
+        width: 100%;
+    }
+    .code-left, .code-right,
+    .fig-left, .fig-right {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .code-small, 
+    .fig-small img,
+    .fig-medium img,
+    .fig-large img {
+        width: 80% !important;
+    }
+    
+    .link-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

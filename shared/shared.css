@@ -1,0 +1,134 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffff6;
+    color: #333;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Use <main> or inner sections for centering */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header wrapper */
+#shared-header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2.5% 0px; /* This replaces margin tricks */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Logo */
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    font-family: 'Consolas', monospace;
+    cursor: default;
+}
+
+.logo-link,
+.logo-link:visited,
+.logo-link:hover,
+.logo-link:active {
+    color: #1c1f1b;
+    text-decoration: none;
+}
+
+.logo-link h1 {
+    cursor: pointer;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #1c1f1b;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #8d9195;
+}
+
+/* Separator line under header */
+.separator {
+    width: 95%;
+    border-top: 2px solid #1c1f1b;
+    margin: 0 auto 0;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    background: none;
+    border: none;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #fffff6;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        padding: 10px;
+        border: 1px solid #afafab;
+        z-index: 10;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 320px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+}

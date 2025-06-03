@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title - Daniel Cunha</title>
+    <link rel="stylesheet" href="../../../shared/shared.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="../../../shared/shared.js"></script>
+</head>
+<body>
+    <div id="shared-header"></div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        fetch('../../../shared/header.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('shared-header').innerHTML = html);
+    });
+    </script>
+
+    <div class="post-body">
+        <!-- TEXT BLOCK -->
+        <section class="post-section">
+          <p>
+            Here's an introduction to the project. You can add as much <strong>formatted</strong> text as you want, include <em>emphasis</em>, and even <a href="#" class="github-link">internal links</a>.
+          </p>
+        </section>
+      
+        <!-- FIGURE BLOCK -->
+        <section class="post-section">
+          <figure class="fig-center fig-small">
+            <img src="thumbnail.png" alt="Description of figure" loading="lazy">
+            <figcaption>Figure 1. This is a caption for the image.</figcaption>
+          </figure>
+        </section>
+      
+        <!-- COLLAPSIBLE CODE BLOCK -->
+        <section class="post-section collapsible-section">
+          <button class="collapse-toggle" onclick="toggleCollapse(this)">Show Code</button>
+          <div class="collapsible-content">
+            <div class="code-block code-left code-small">
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              <pre><code class="language-python">
+      # Example Python code
+      def greet(name):
+          print(f"Hello, {name}!")
+      
+      greet("world")
+              </code></pre>
+            </div>
+          </div>
+        </section>
+      
+        <!-- QUOTE BLOCK -->
+        <section class="post-section quote-block">
+          <blockquote>
+            “The best way to get started is to quit talking and begin doing.”
+            <footer>— <span class="quote-author">Walt Disney</span></footer>
+          </blockquote>
+        </section>
+      
+        <!-- LINK BLOCK -->
+        <div class="link-row">
+            <p>Check the full code on <a href="https://github.com/yourrepo/yourproject" class="github-link" target="_blank">GitHub</a>.</p>
+            <a href="../../posts.html"><button class="back-btn">Back to Posts</button></a>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

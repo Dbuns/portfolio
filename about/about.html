@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Daniel Cunha</title>
+    <link rel="stylesheet" href="../shared/shared.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="../shared/shared.js"></script>
+</head>
+<body>
+    <div id="shared-header"></div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        fetch('../shared/header.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('shared-header').innerHTML = html);
+    });
+    </script>
+
+    <!-- About content -->
+    <div class="about-content">
+        <div class="text-section">
+            <p>Hello! I'm Daniel, a materials scientist with a passion for research and technology.  I spend most of my time designing experiments, analyzing data, and mentoring students, with a focus on developing advanced materials for various applications.</p>
+            <p>Outside of work, I dive into personal projects that help me learn new skills — from coding and design to cooking and travel. I value quiet focus over noisy feeds, so I built this site as a space to share what I'm working on, beyond the boundaries of my day job.</p>
+            <p>Thanks for stopping by. I hope you find something here that sparks your interest.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/my-photo.jpg" alt="Daniel Cunha" class="profile-pic"> <!-- Profile image -->
+        </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+        <p>Feel free to reach out!</p>
+        <ul>
+            <li><a href="mailto:d.monteirocunha@utwente.nl"><img src="../assets/email.png" alt="Email"></a></li>
+            <li><a href="https://www.linkedin.com/in/danielcunha1/"><img src="../assets/linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://github.com/Dbuns"><img src="../assets/github.png" alt="GitHub"></a></li>
+        </ul>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+

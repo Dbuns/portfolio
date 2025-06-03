@@ -1,0 +1,109 @@
+/* Filter options */
+.filters {
+    margin: 20px 0;
+    text-align: left;
+    width: 95%;
+    padding-left: 20px;
+}
+
+/* Filter buttons */
+.filters button {
+    padding: 7px 15px;
+    margin: 5px 5px;
+    background-color: transparent; 
+    border: 2px solid #333; 
+    color: #333;
+    cursor: pointer;
+    font-size: 1.0em;
+    font-family: 'Consolas', monospace;
+    border-radius: 25px; 
+    transition: all 0.3s ease; 
+}
+
+/* Hover effect on buttons */
+.filters button:hover {
+    background-color: #ffffe0;
+    border-color: #333;
+    color: #333; 
+}
+
+.filters button.active-filter {
+    background-color: #333;
+    color: white;
+}
+
+/* Grid layout for posts */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.post {
+    position: relative;
+    overflow: hidden;
+    border: 0.5px solid #8d8c8c;
+    border-radius: 0;
+    aspect-ratio: 1/1;
+    max-width: 250px;
+    margin: auto;
+    transition: transform 0.3s ease;
+}
+
+.post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.post:hover img {
+    transform: scale(1.0);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.overlay-text {
+    color: white;
+    text-align: center;
+    font-family: 'Consolas', monospace;
+}
+
+.post:hover .overlay {
+    opacity: 1;
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 1200px) {
+    .posts-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .posts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2em; 
+    }
+}

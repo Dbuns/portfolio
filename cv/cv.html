@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Daniel Cunha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../shared/shared.css">
+    <script defer src="../shared/shared.js"></script>
+  </head>
+<body>
+   <div id="shared-header"></div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        fetch('../../../shared/header.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('shared-header').innerHTML = html);
+    });
+    </script>
+
+    <div class="cv-actions">
+        <a href="../assets/Cunha_CV.pdf" download class="btn">Download PDF</a>
+    </div>
+
+    <main class="cv-container"  itemscope itemtype="https://schema.org/Person">
+           
+        <section class="cv-header" id="summary">
+          <h2>Daniel Cunha</h2>
+
+          <p class="bio">Scientist working across materials science, data analysis, and thin-film techniques. I focus on experimental design and modeling, often collaborating with researchers from different fields to understand and improve complex systems.
+        </p>
+        </section>
+
+        <section class="cv-section" id="highlights">
+          <h3>Career Highlights</h3>
+          <ul>
+            <li>Provided regular supervision and mentorship to PhD, postdoc, and MSc researchers</li>
+            <li>Initiated and led interdisciplinary collaborations, resulting in co-authored publications beyond core group activities</li>
+            <li>Supported lab operations and resource tracking, improving equipment and data management</li>
+            <li>Developed custom Python-based tools to support data analysis across multiple research projects</li>
+            <li>Represented staff in the departmental board and organized events via the faculty social club</li>
+          </ul>
+        </section>
+
+        <section class="cv-section" id="experience">
+          <h3>Professional Experience</h3>
+          <ul>
+            <li><strong>Senior Scientist</strong> – University of Twente<br>Research in the fields of PLD and SPM; data analysis; student supervision</li>
+            <li><strong>Researcher</strong> – University of Twente<br>Solid-state batteries, experiment design, industry collaboration</li>
+            <li><strong>Intern Strategic Planning</strong> – CTEEP, Brazil<br>Energy market analysis and reliability improvement</li>
+            <li><strong>Undergraduate Researcher</strong> – UFABC<br>Nanostructures for photovoltaics</li>
+          </ul>
+        </section>
+
+        <section class="cv-section" id="publications">
+            <h3>Selected Publications</h3>
+            <ul>
+              <li><strong>(2025)</strong> <a href="https://iopscience.iop.org/article/10.1088/2515-7655/add76b/meta" target="_blank"><em>Reduction of thermal conductivity by nanopillar inclusion in thermoelectric vertically aligned nanocomposites</em></a></li>
+              <li><strong>(2025)</strong> <a href="https://onlinelibrary.wiley.com/doi/10.1002/eem2.12862" target="_blank"><em>Facet-Dependent Performance of Microstructured SrTiO3 Particles in Photocatalytic Oxidation of Acetone</em></a></li>
+              <li><strong>(2025)</strong> <a href="https://www.nature.com/articles/s44160-024-00717-z" target="_blank"><em>Room-temperature epitaxy of α-CH3NH3PbI3 halide perovskite by pulsed laser deposition</em></a></li>
+              <li><strong>(2024)</strong> <a href="https://doi.org/10.1016/j.joule.2024.09.001" target="_blank"><em>Single-source pulsed laser-deposited perovskite solar cells with enhanced performance via bulk and 2D passivation</em></a></li>
+              <li><a href="https://scholar.google.com/citations?user=RjYv4w0AAAAJ&hl=en" target="_blank">See all publications →</a></li>
+            </ul>
+        </section>
+
+        <section class="cv-section" id="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li><strong>Technical:</strong> Pulsed Laser Deposition, Scanning Probe Microscopy, Python, experimental design</li>
+              <li><strong>Analytical:</strong> Predictive modeling, data analysis</li>
+              <li><strong>Communication:</strong> Student supervision, teaching, collaborative work with multidisciplinary teams</li>
+            </ul>
+        </section>
+      
+        <section class="cv-section" id="education">
+          <h3>Education</h3>
+          <ul>
+            <li><strong>PhD in Materials Science</strong> – University of Twente</li>
+            <li><strong>Bachelor's in Energy Engineering (Cum laude)</strong> – Federal University of ABC</li>
+            <li><strong>Bachelor's in Science and Technology</strong> – Federal University of ABC</li>
+          </ul>
+        </section>
+
+        <section class="cv-section" id="languages">
+            <h3>Languages</h3>
+            <p>Portuguese (native), English (fluent), Spanish (intermediate), Dutch (basic)</p>
+        </section>
+      
+        <section class="cv-section" id="interests">
+          <h3>Personal Interests</h3>
+          <p>Running, Bouldering, Drumming, Cooking, Reading</p>
+        </section>
+      </main>
+      
+    <script src="scripts.js"></script>
+</body>
+</html>
