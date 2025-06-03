@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="/shared/shared.css">
     <link rel="stylesheet" href="styles.css">
     <script defer src="/shared/shared.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Daniel Cunha",
+      "affiliation": "University of Twente",
+      "description": "Materials scientist focused on thin films, experimental design, and data analysis.",
+      "url": "https://www.danielcunha.net"
+    }
+    </script>
 </head>
 <body>
     <div id="shared-header"></div>
@@ -61,31 +71,10 @@
       
         <!-- LINK BLOCK -->
         <div class="link-row">
-            <p>Check the full code on <a href="https://github.com/yourrepo/yourproject" class="github-link" target="_blank">GitHub</a>.</p>
+            <p>Check the full code on <a href="https://github.com/yourrepo/yourproject" class="github-link" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
             <a href="../../posts.html"><button class="back-btn">Back to Posts</button></a>
         </div>
     </div>
-
-    <script src="scripts.js"></script>
-          "affiliation": "University of Twente",
-      "description": "Materials scientist focused on thin films, experimental design, and data analysis."
-    }
-    </script>
-</head>
-<body>
-    <div id="shared-header"></div>
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        fetch('shared/header.html')
-            .then(res => res.text())
-            .then(html => document.getElementById('shared-header').innerHTML = html);
-    });
-    </script>
-    <main class="main-content">
-        <div class="welcome-message">
-            <p>Welcome to my page.</p>
-        </div>
-    </main>
 
     <script src="scripts.js"></script>
     <script data-goatcounter="https://dbuns.goatcounter.com/count"
