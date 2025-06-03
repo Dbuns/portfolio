@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title - Daniel Cunha</title>
+    <title>Project Title | Daniel Cunha</title>
     <link rel="stylesheet" href="../../../shared/shared.css">
     <link rel="stylesheet" href="styles.css">
     <script defer src="../../../shared/shared.js"></script>
@@ -67,5 +67,30 @@
     </div>
 
     <script src="scripts.js"></script>
+          "affiliation": "University of Twente",
+      "description": "Materials scientist focused on thin films, experimental design, and data analysis."
+    }
+    </script>
+</head>
+<body>
+    <div id="shared-header"></div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        fetch('shared/header.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('shared-header').innerHTML = html);
+    });
+    </script>
+    <main class="main-content">
+        <div class="welcome-message">
+            <p>Welcome to my page.</p>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+    <script data-goatcounter="https://dbuns.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
 </body>
 </html>
