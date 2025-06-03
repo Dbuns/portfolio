@@ -82,17 +82,17 @@
     color: #555;
   }
 
-  #highlights li {
+  #contributions li {
     list-style-type: disc;
     list-style-position: outside;
   }
 
-  #highlights ul li {
+  #contributions ul li {
     display: list-item;
     margin-bottom: 4px;
  }
 
-  #highlights ul li::marker {
+  #contributions ul li::marker {
     font-size: 0.7em;
   }
 
