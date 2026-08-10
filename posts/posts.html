@@ -11,6 +11,7 @@
     <meta property="og:description" content="Browse projects and personal experiments by Daniel Cunha.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.danielcunha.net/posts/posts.html">
+    <link rel="canonical" href="https://www.danielcunha.net/posts/posts.html">
     <link rel="stylesheet" href="/shared/shared.css">
     <link rel="stylesheet" href="styles.css">
     <script defer src="/shared/shared.js"></script>
@@ -19,8 +20,9 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Daniel Cunha",
+      "jobTitle": "Project Manager and Materials Scientist",
       "affiliation": "University of Twente",
-      "description": "Project Manager with a background in materials science, focused on research operations, process optimization, and coordinating complex scientific projects.",
+      "description": "Project manager and materials scientist involved in research operations, technical support, and process improvement.",
       "url": "https://www.danielcunha.net"
     }
     </script>
@@ -35,14 +37,17 @@
     });
     </script>
 
+    <main>
+    <h1 class="visually-hidden">Posts and Projects</h1>
     <!-- Filters -->
-    <div class="filters">
-        <button data-category="all" onclick="filterPosts(this)">All</button>
-        <button data-category="python" onclick="filterPosts(this)">Python</button>
+    <div class="filters" aria-label="Filter posts">
+        <button type="button" data-category="all" onclick="filterPosts(this)" aria-pressed="false">All</button>
+        <button type="button" data-category="python" onclick="filterPosts(this)" aria-pressed="false">Python</button>
     </div>
 
     <!-- Posts Grid -->
     <div id="posts-grid" class="posts-grid"></div>
+    </main>
 
     <script src="scripts.js"></script>
     <script data-goatcounter="https://dbuns.goatcounter.com/count"
