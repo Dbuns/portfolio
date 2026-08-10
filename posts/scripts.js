@@ -36,10 +36,14 @@ function filterPosts(button) {
 
     // Remove highlight from all buttons
     const buttons = document.querySelectorAll('.filters button');
-    buttons.forEach(btn => btn.classList.remove('active-filter'));
+    buttons.forEach(btn => {
+        btn.classList.remove('active-filter');
+        btn.setAttribute('aria-pressed', 'false');
+    });
 
     // Highlight clicked one
     button.classList.add('active-filter');
+    button.setAttribute('aria-pressed', 'true');
 
     // Filter posts
     filteredPosts = category === 'all' ? [...posts] : posts.filter(post => post.category === category);
