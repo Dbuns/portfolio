@@ -1,5 +1,5 @@
 let posts = [
-    { title: 'Revisiting an old project: KMCS in Python', image: 'https://raw.githubusercontent.com/Dbuns/KMCS/main/figures/snapshot_2mat_3d.png', category: 'python', link: 'projects/kmcs/kmcs.html', date: 'August 2026' },
+    { title: 'Revisiting an old project: KMCS in Python', image: 'projects/kmcs/thumb.png', category: 'python', link: 'projects/kmcs/kmcs.html', date: 'August 2026' },
 //    { title: 'Color Pallete', image: 'projects/post_01/thumbnail.png', category: 'python', link: 'projects/post_01/project_01.html', date: 'June 2025' },
 ];
 
