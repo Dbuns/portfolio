@@ -1,6 +1,6 @@
 let posts = [
+    { title: 'Palette Engine: better colors for scientific plots', image: 'projects/palette-engine/thumb.png', category: 'python', link: 'projects/palette-engine/palette-engine.html', date: 'August 2026' },
     { title: 'Revisiting an old project: KMCS in Python', image: 'projects/kmcs/thumb.png', category: 'python', link: 'projects/kmcs/kmcs.html', date: 'August 2026' },
-//    { title: 'Color Pallete', image: 'projects/post_01/thumbnail.png', category: 'python', link: 'projects/post_01/project_01.html', date: 'June 2025' },
 ];
 
 let filteredPosts = [...posts];
