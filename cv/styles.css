@@ -96,6 +96,16 @@
     font-size: 0.7em;
   }
 
+  #experience .role-details {
+    margin-top: 6px;
+    padding-left: 20px;
+  }
+
+  #experience .role-details li {
+    list-style-type: disc;
+    margin-bottom: 4px;
+  }
+
 @media (max-width: 1300px){
     .cv-actions {
         position: static;
