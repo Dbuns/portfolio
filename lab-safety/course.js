@@ -1,5 +1,5 @@
 window.COURSE = {
-  "version": "0.2-review",
+  "version": "0.3-review",
   "title": "Chemical Laboratory Safety Foundations",
   "passPercent": 80,
   "modules": [
@@ -13,19 +13,23 @@ window.COURSE = {
         },
         {
           "title": "RAMP before you start",
-          "text": "Recognise what could cause harm. Assess how harm could occur in this task. Minimise the risk with suitable controls. Prepare for a failure or emergency. Repeat this check when the procedure, quantities, equipment or conditions change."
+          "text": "Recognize what could cause harm. Assess how harm could occur in this task. Minimize the risk with suitable controls. Prepare for a failure or emergency. Repeat this check when the procedure, quantities, equipment or conditions change."
         },
         {
           "title": "Speak up and pause",
           "text": "If instructions are missing, equipment behaves unexpectedly or a control is unavailable, pause and contact the supervisor or technician. Do not improvise a substitute procedure. Report incidents and near misses so the group can prevent recurrence."
         },
         {
-          "title": "Everyday behaviour",
+          "title": "Everyday behavior",
           "text": "Keep food and drinks outside the laboratory. Never mouth-pipette or deliberately smell chemicals. Keep benches and exits clear. Remove contaminated gloves before touching phones, door handles or shared computers, and wash hands before leaving."
         },
         {
-          "title": "Jewellery and personal items",
-          "text": "Remove or secure jewellery and loose accessories where they may snag, trap contamination or interfere with gloves. Keep personal items outside chemical work areas. Follow the local clothing and jewellery rules."
+          "title": "Jewelry and personal items",
+          "text": "Remove or secure jewelry and loose accessories where they may snag, trap contamination or interfere with gloves. Keep personal items outside chemical work areas. Follow the local clothing and jewelry rules."
+        },
+        {
+          "title": "Supervision and visitors",
+          "text": "Know who is responsible for the work and the rules for working alone. Do not begin hazardous work alone without the required authorization and arrangements. Visitors need permission, appropriate protection and supervision; an experienced visitor is not automatically trained for your laboratory."
         }
       ],
       "local": "Identify the supervisor, technician, reporting route, access rules and policy on working alone.",
@@ -34,17 +38,17 @@ window.COURSE = {
         "module": 0,
         "prompt": "You are asked to start an unfamiliar procedure after completing this course. What should you do?",
         "options": [
-          "Start because the certificate covers all tasks",
-          "Confirm task instructions, training and supervision",
-          "Copy someone nearby without asking"
+          "Read the procedure and begin with a smaller quantity to gain experience.",
+          "Obtain task-specific training and authorization before starting the work.",
+          "Observe a colleague once and repeat the method without checking sign-off."
         ],
         "answer": 1,
         "explanation": "General knowledge does not replace training for the actual procedure.",
         "critical": true
       },
-      "reference": "1: Safety culture",
+      "reference": "1 (pp. 10–13) and 2 (pp. 14–25)",
       "figure": "ramp.svg",
-      "figureAlt": "RAMP cycle: recognise, assess, minimise and prepare"
+      "figureAlt": "RAMP cycle: recognize, assess, minimize and prepare"
     },
     {
       "title": "Labels and safety information",
@@ -52,7 +56,7 @@ window.COURSE = {
       "sections": [
         {
           "title": "Read the complete label",
-          "text": "Check the chemical identity, concentration, hazard statements and precautionary statements. Hazard pictograms flag types of danger; they do not describe every risk or provide a complete procedure. An unlabelled bottle is an unknown substance until an authorised person resolves its identity."
+          "text": "Check the chemical identity, concentration, hazard statements and precautionary statements. Hazard pictograms flag types of danger; they do not describe every risk or provide a complete procedure. An unlabeled bottle is an unknown substance until an authorized person resolves its identity."
         },
         {
           "title": "Safety data sheets",
@@ -61,29 +65,33 @@ window.COURSE = {
         {
           "title": "Turn information into a plan",
           "text": "Identify exposure routes, ventilation, compatible protection, storage restrictions and emergency needs. The SDS supports your assessment; it cannot account for every reaction, apparatus or operating condition. Combine it with the approved procedure and local guidance."
+        },
+        {
+          "title": "Signal words and hazard categories",
+          "text": "Danger and Warning are signal words indicating different levels of hazard within the labeling system. A lower category number generally indicates a more severe hazard within a given hazard class; do not compare category numbers across different classes. Read hazard and precautionary statements as well as pictograms. Follow the local standard for labeling working solutions with identity and hazard information."
         }
       ],
-      "local": "Add your SDS access method, container labelling standard and unknown-container reporting procedure.",
+      "local": "Add your SDS access method, container labeling standard and unknown-container reporting procedure.",
       "practice": {
         "id": "q2",
         "module": 1,
-        "prompt": "You find an unlabelled bottle of clear liquid. What should you do?",
+        "prompt": "You find an unlabeled bottle of clear liquid. What should you do?",
         "options": [
-          "Assume it is the usual solvent",
-          "Identify it by smelling it",
-          "Do not use it; notify the responsible person"
+          "Use the usual stock location to infer its identity before transferring it.",
+          "Compare its smell with a known solvent before deciding whether to use it.",
+          "Keep it out of use and ask the responsible person to establish its identity."
         ],
         "answer": 2,
         "explanation": "Appearance and location cannot establish chemical identity.",
         "critical": true
       },
-      "reference": "2: Information resources",
+      "reference": "3 (pp. 40–44)",
       "figure": "sds.svg",
       "figureAlt": "Safety data sheet sections that support planning"
     },
     {
       "title": "Health and physical hazards",
-      "objective": "Recognise common ways chemicals and equipment can cause harm.",
+      "objective": "Recognize common ways chemicals and equipment can cause harm.",
       "sections": [
         {
           "title": "Exposure and effects",
@@ -91,7 +99,7 @@ window.COURSE = {
         },
         {
           "title": "Common chemical hazards",
-          "text": "Corrosive substances can damage tissue. Flammable liquids may release vapours that ignite away from the container. Oxidisers can intensify combustion. Toxic and sensitising substances need controls appropriate to their specific hazards. Read the actual product information rather than assuming all chemicals in a category behave alike."
+          "text": "Corrosive substances can damage tissue. Flammable liquids may release vapors that ignite away from the container. Oxidizers can intensify combustion. Toxic and sensitizing substances need controls appropriate to their specific hazards. Read the actual product information rather than assuming all chemicals in a category behave alike."
         },
         {
           "title": "Reactivity and stored energy",
@@ -112,6 +120,10 @@ window.COURSE = {
         {
           "title": "Peroxide formation is a different hazard",
           "text": "Some solvents can form hazardous peroxides during storage. Follow the local dating, inspection and disposal procedure. If an aged container shows unusual crystals or you suspect instability, do not open or move it: keep people away and ask the responsible safety staff to assess it. This differs from mixing an oxidising cleaning solution with solvent waste."
+        },
+        {
+          "title": "Health effects beyond an immediate burn",
+          "text": "Some substances can cause cancer, genetic damage or reproductive harm; others damage particular organs or cause allergic sensitization. Repeated exposure can matter even when each individual exposure seems small. A sensitized person may react to very low exposure. Assess the actual substance, route and exposure pattern, and seek occupational-health advice about individual concerns without relying on symptoms to judge safety."
         }
       ],
       "local": "List the hazards actually present and the activities needing additional training.",
@@ -120,15 +132,15 @@ window.COURSE = {
         "module": 2,
         "prompt": "A volatile chemical has little noticeable smell. Is ventilation unnecessary?",
         "options": [
-          "No; determine controls from the hazards and assessment",
-          "Yes; smell is a reliable exposure monitor",
-          "Yes, if the bottle is small"
+          "Check the substance, exposure routes and controls before starting the task.",
+          "Use the chemical odor to judge whether significant exposure is occurring.",
+          "Wait for irritation before deciding that additional protection is necessary."
         ],
         "answer": 0,
         "explanation": "Odour is not a reliable measure of exposure or safety.",
         "critical": false
       },
-      "reference": "3–4: Health and physical hazards",
+      "reference": "3 (pp. 26–39)",
       "figure": "exposure.svg",
       "figureAlt": "Exposure routes: breathing, skin, mouth and puncture"
     },
@@ -159,21 +171,21 @@ window.COURSE = {
         "module": 3,
         "prompt": "You plan to use ten times the quantity in an approved procedure. What next?",
         "options": [
-          "Use a larger beaker",
-          "Review changed risks and obtain approval",
-          "Wear extra gloves"
+          "Repeat the previous risk assessment because the reaction remains the same.",
+          "Review the changed scale, heat removal and other risks before proceeding.",
+          "Retain the previous controls and reduce the heating rate during the run."
         ],
         "answer": 1,
         "explanation": "Scaling can change heat removal, gas generation and the controls required.",
         "critical": false
       },
-      "reference": "5: Assessing risk",
+      "reference": "1 (pp. 10–13) and 4 (pp. 46–48)",
       "figure": "risk.svg",
       "figureAlt": "Risk depends on task conditions and controls"
     },
     {
       "title": "Protection and fume hoods",
-      "objective": "Choose controls for the hazard and recognise their limits.",
+      "objective": "Choose controls for the hazard and recognize their limits.",
       "sections": [
         {
           "title": "Control the source",
@@ -190,6 +202,10 @@ window.COURSE = {
         {
           "title": "A fume hood must function",
           "text": "Check the operating indicator and use the specified sash position. Keep the face and body outside the opening, avoid obstructing airflow and arrange work according to local instructions. A hood is not a general storage cupboard or a guarantee against explosion. If an alarm or ventilation failure occurs, stop safely and notify the responsible person."
+        },
+        {
+          "title": "Clothing, glasses and clean hands",
+          "text": "Cover legs and wear closed shoes as required by the laboratory rules; shorts and open footwear leave skin exposed. Ordinary prescription glasses and contact lenses do not replace required chemical splash goggles. Do not adjust contact lenses with contaminated hands. Remove gloves without transferring contamination to the skin, and wash your hands after removing them and before leaving."
         }
       ],
       "local": "Confirm eye protection, lab-coat and glove requirements; add photographs and operating instructions for your hoods.",
@@ -198,15 +214,15 @@ window.COURSE = {
         "module": 4,
         "prompt": "The fume hood alarm sounds during preparation. What should you do?",
         "options": [
-          "Continue with extra PPE",
-          "Silence the alarm and continue",
-          "Stop safely and report the problem"
+          "Continue with thicker gloves while keeping the hood sash at its mark.",
+          "Finish the transfer quickly and report the ventilation failure afterward.",
+          "Stop safely and arrange assessment of the hood before resuming work."
         ],
         "answer": 2,
         "explanation": "Required ventilation must function; additional PPE is not a substitute.",
         "critical": true
       },
-      "reference": "6: Laboratory operations",
+      "reference": "2 (pp. 16–18) and 4 (pp. 47, 50)",
       "figure": "controls.svg",
       "figureAlt": "Controls from eliminating the hazard to personal protection",
       "extraFigure": "fume-hood.svg",
@@ -214,7 +230,7 @@ window.COURSE = {
     },
     {
       "title": "Safe laboratory work",
-      "objective": "Recognise unsafe setup, transfer and housekeeping practices.",
+      "objective": "Recognize unsafe setup, transfer and housekeeping practices.",
       "sections": [
         {
           "title": "Prepare the workspace",
@@ -222,7 +238,7 @@ window.COURSE = {
         },
         {
           "title": "Transfers and heating",
-          "text": "Use suitable transfer tools, container support and secondary containment according to the procedure. Keep ignition sources away from flammables and their vapours. Never mouth-pipette. Hot glass can look like cold glass: use the prescribed handling tools and allow controlled cooling."
+          "text": "Use suitable transfer tools, container support and secondary containment according to the procedure. Keep ignition sources away from flammables and their vapors. Never mouth-pipette. Hot glass can look like cold glass: use the prescribed handling tools and allow controlled cooling."
         },
         {
           "title": "Prevent contamination",
@@ -238,15 +254,39 @@ window.COURSE = {
         },
         {
           "title": "Chemicals through doors",
-          "text": "Carry closed, labelled containers in suitable secondary containment or an approved carrier. Plan the route and keep a clean method of opening doors. Never touch shared handles with potentially contaminated gloves. The local procedure may prescribe one clean hand or assistance; do not compromise a secure grip or protection to follow a slogan."
+          "text": "Carry closed, labeled containers in suitable secondary containment or an approved carrier. Plan the route and keep a clean method of opening doors. Never touch shared handles with potentially contaminated gloves. The local procedure may prescribe one clean hand or assistance; do not compromise a secure grip or protection to follow a slogan."
         },
         {
-          "title": "Flammable vapour near heat",
-          "text": "Acetone is a flammable solvent. A spill can release vapour, and a hot plate or its electrical components can provide an ignition source. Keep flammable liquids and vapours away from ignition sources; do not assume a heater is suitable merely because it has no open flame."
+          "title": "Flammable vapor near heat",
+          "text": "Acetone is a flammable solvent. A spill can release vapor, and a hot plate or its electrical components can provide an ignition source. Keep flammable liquids and vapors away from ignition sources; do not assume a heater is suitable merely because it has no open flame."
         },
         {
           "title": "Shutdown is procedure-specific",
           "text": "Leave equipment in its prescribed safe state. Many tasks require shutdown, but approved continuing operations may have different instructions. Never switch off safety-critical ventilation or another ongoing experiment simply because you are leaving. Ask when the handover or shutdown arrangement is unclear."
+        },
+        {
+          "title": "Glassware, tubing and cleaning",
+          "text": "Reject cracked or chipped glassware and use glass rated for the intended heating, vacuum or pressure. Glass tubing can break when forced into a stopper and cause deep cuts: obtain a demonstration of the approved tools and technique rather than forcing it. Put broken glass in its designated container, never pick it up with bare hands. Use the approved glassware-cleaning method; aggressive cleaning chemicals require their own assessment and training."
+        },
+        {
+          "title": "Distillation and solvent extraction",
+          "text": "Distillation can involve flammable vapor, pressure buildup, sudden boiling and hazardous residues. Follow the approved heating, stirring, cooling and shutdown method; do not improvise a sealed system or distill to dryness. A separatory funnel can build pressure: obtain a practical demonstration, support the stopper and stopcock, and vent as instructed into the hood with the outlet directed away from people and ignition sources."
+        },
+        {
+          "title": "Centrifuges",
+          "text": "Use the correct rotor, tubes and loading arrangement; balance opposing loads as specified by the manufacturer and local procedure. Inspect components before use and keep the lid closed while the rotor moves. Wait for a complete stop before opening; never stop a rotor with your hand. Unexpected vibration or noise requires the prescribed safe stop and a check by the responsible person."
+        },
+        {
+          "title": "Vacuum, pressure and compressed air",
+          "text": "Vacuum glassware can implode, and pressurized systems can release stored energy or eject parts. Use equipment rated for the intended conditions, required shielding and approved traps or pressure controls. Secure gas cylinders and use the correct regulator only after specific training. Never direct compressed air at yourself or another person, and do not use it to clean clothing or skin."
+        },
+        {
+          "title": "Heat, cooling baths and flames",
+          "text": "Plan temperature control before adding reagents: an exothermic reaction can accelerate beyond the available cooling. Never add boiling chips to an already hot liquid; follow the approved method to prevent sudden boiling. Point a heated test tube away from everyone and use the specified holder and heating method. Open flames need specific authorization and sound gas connections. Dry ice and liquid nitrogen can cause cold injury, oxygen displacement and pressure in sealed containers; use approved ventilation, protection and containers after training."
+        },
+        {
+          "title": "Electrical equipment and UV",
+          "text": "Keep electrical equipment and connections dry, inspect cords and plugs, and report damage or overheating. Know the controls: a stirrer dial and a heater dial may look similar. Disconnect or isolate equipment only as instructed, and do not improvise electrical repairs. UV lamps can injure eyes and skin; use the required enclosure and shielding, and task-specific protection. Ordinary safety glasses are not a guarantee of UV protection."
         }
       ],
       "local": "Add equipment demonstrations, transfer routes, unattended-operation rules and broken-glass arrangements.",
@@ -255,19 +295,19 @@ window.COURSE = {
         "module": 5,
         "prompt": "A glass flask has a crack but holds liquid. What should you do?",
         "options": [
-          "Use it briefly",
-          "Remove it from use and follow the damaged-glass procedure",
-          "Cover the crack with tape"
+          "Use it at room temperature and avoid moving it during the experiment.",
+          "Remove it from use and follow the approved reporting and disposal route.",
+          "Wrap it for support and keep it away from heating or vacuum equipment."
         ],
         "answer": 1,
         "explanation": "Cracks can lead to failure during handling, heating or pressure changes.",
         "critical": false
       },
-      "reference": "6: Laboratory operations",
+      "reference": "4 (pp. 48–57)",
       "figure": "transport.svg",
       "figureAlt": "Closed container, secondary containment and clean door contact",
       "extraFigure": "contained-transfer.svg",
-      "extraAlt": "Closed labelled bottle in containment and a separate clean door contact"
+      "extraAlt": "Closed labeled bottle in containment and a separate clean door contact"
     },
     {
       "title": "Storage and chemical waste",
@@ -275,7 +315,7 @@ window.COURSE = {
       "sections": [
         {
           "title": "Store by compatibility",
-          "text": "Use designated storage based on hazards and compatibility. Alphabetical order alone can place incompatible chemicals together. Keep containers identifiable, closed and in suitable containment. Follow specific requirements for flammables, corrosives and oxidisers."
+          "text": "Use designated storage based on hazards and compatibility. Alphabetical order alone can place incompatible chemicals together. Keep containers identifiable, closed and in suitable containment. Follow specific requirements for flammables, corrosives and oxidizers."
         },
         {
           "title": "Plan waste before starting",
@@ -283,11 +323,15 @@ window.COURSE = {
         },
         {
           "title": "Avoid hazardous mixtures",
-          "text": "Mixing waste can cause reaction, pressure or fire. Keep incompatible wastes separate according to the approved local system. Do not pour chemicals into drains or put them in ordinary rubbish unless the authorised local procedure explicitly permits that material."
+          "text": "Mixing waste can cause reaction, pressure or fire. Keep incompatible wastes separate according to the approved local system. Do not pour chemicals into drains or put them in ordinary trash unless the authorized local procedure explicitly permits that material."
         },
         {
           "title": "Special waste",
           "text": "Sharps, broken glass, contaminated solids and chemical packaging may have different routes. An empty-looking container may still be contaminated. Follow instructions for closure, filling limits and collection."
+        },
+        {
+          "title": "Refrigerated chemical storage",
+          "text": "Use a refrigerator or freezer approved for the material. Flammable liquids must not be stored in an ordinary household refrigerator; the unit must be explicitly rated for flammable-material storage. Label containers, provide suitable spill containment and keep incompatible chemicals separated. Never store food or drinks for consumption in a chemical refrigerator."
         }
       ],
       "local": "Provide actual waste categories, label examples, storage locations and collection contacts.",
@@ -296,33 +340,33 @@ window.COURSE = {
         "module": 6,
         "prompt": "You are unsure whether waste belongs in a nearby waste bottle. What should you do?",
         "options": [
-          "Add it slowly",
-          "Confirm the correct compatible waste stream",
-          "Dilute it and use the sink"
+          "Use the label on the nearest waste container to infer the right stream.",
+          "Confirm the waste identity and approved compatible route before adding it.",
+          "Dilute the waste so it can be added to the most convenient container."
         ],
         "answer": 1,
         "explanation": "Confirm compatibility before mixing any waste.",
         "critical": true
       },
-      "reference": "7: Waste and storage",
+      "reference": "2 (pp. 20–22) and 3 (pp. 37–39), with 4 (p. 53)",
       "figure": "waste.svg",
       "figureAlt": "Check waste identity and compatibility before choosing a stream"
     },
     {
       "title": "Prepare for emergencies",
-      "objective": "Choose a first response and recognise your limits.",
+      "objective": "Choose a first response and recognize your limits.",
       "sections": [
         {
           "title": "Know the arrangements",
-          "text": "Before work, locate exits, alarms, eyewash, safety shower and the means of calling assistance. Keep access clear. Learn the local emergency number, meeting point and reporting procedure during induction; do not assume they match your previous institution."
+          "text": "Before work, locate exits, alarms, eyewash, safety shower and the means of calling assistance. Keep access clear. Learn the local emergency number, meeting point and reporting procedure during orientation; do not assume they match your previous institution."
         },
         {
           "title": "Chemical exposure",
-          "text": "Alert others and obtain assistance promptly. For an eye or skin splash, begin the prescribed emergency flushing immediately and obtain medical advice; do not delay while searching for paperwork. Follow the local emergency procedure and chemical-specific guidance. Do not attempt chemical neutralisation on the body."
+          "text": "Alert others and obtain assistance promptly. For an eye or skin splash, begin the prescribed emergency flushing immediately and obtain medical advice; do not delay while searching for paperwork. Follow the local emergency procedure and chemical-specific guidance. Do not attempt chemical neutralization on the body."
         },
         {
           "title": "Spills and fire",
-          "text": "Warn people nearby and keep others away. Assess from a safe location. If the substance, risk or response is uncertain, withdraw and summon trained help. Only undertake cleanup or firefighting within your training and the authorised procedure. Protect an escape route and follow evacuation instructions."
+          "text": "Warn people nearby and keep others away. Assess from a safe location. If the substance, risk or response is uncertain, withdraw and summon trained help. Only undertake cleanup or firefighting within your training and the authorized procedure. Protect an escape route and follow evacuation instructions."
         },
         {
           "title": "Report and learn",
@@ -330,7 +374,15 @@ window.COURSE = {
         },
         {
           "title": "University of Twente emergency contact",
-          "text": "UT publishes its campus emergency number as 053 489 2222 (+31 53 489 2222). Know your building, room and the nature of the incident when calling. During induction, verify how to call from your phone and the local emergency instructions. Follow the building alarm and evacuation procedure; go to the designated assembly point and do not re-enter until authorised."
+          "text": "In the Netherlands, 112 is the national emergency number for urgent police, fire or ambulance assistance. UT publishes 053 489 2222 (+31 53 489 2222) as its campus emergency number, or 2222 internally. Know both numbers and follow the campus emergency instructions. Give your building, room, incident and any injuries when calling. During orientation, verify how to call from your phone. On a building alarm, follow the evacuation route to the designated assembly point and do not re-enter until authorized."
+        },
+        {
+          "title": "Use the eyewash and safety shower",
+          "text": "Learn how to activate the actual equipment before an incident. For an ordinary liquid chemical splash in the eyes, start flushing immediately, hold the eyelids open and obtain help. Remove contact lenses if readily possible without delaying flushing. For substantial skin or clothing contamination, use the safety shower and remove contaminated clothing while rinsing. General first aid commonly requires at least 15 minutes of flushing, and some chemicals require longer or specific treatment: follow the emergency procedure, SDS and responder instructions. Suspected HF exposure requires immediate specialist emergency care; a routine rinse alone is not sufficient treatment."
+        },
+        {
+          "title": "Clothing fires and other injuries",
+          "text": "If clothing catches fire, do not run. Use the practiced emergency response: stop, drop and roll, or use an immediately accessible safety shower, while someone summons help. Never wrap a standing person in a fire blanket. For electrical shock, do not touch a person who may still be connected to live power; obtain emergency help and safe isolation. Move someone from fumes only if you can do so without entering a hazardous atmosphere. Do not induce vomiting after chemical ingestion; obtain emergency medical advice."
         }
       ],
       "local": "Verify emergency contacts, exposure instructions, evacuation route, meeting point and spill-response responsibilities.",
@@ -339,15 +391,15 @@ window.COURSE = {
         "module": 7,
         "prompt": "An unknown chemical spills and you lack spill-response training. What should you do?",
         "options": [
-          "Clean it quickly",
-          "Warn others, withdraw from danger and summon trained help",
-          "Mix in a neutraliser"
+          "Choose a general spill absorbent and clean up while wearing fresh gloves.",
+          "Warn others, withdraw safely and arrange assessment by trained staff.",
+          "Dilute the spill with water and ask the technician to check it afterward."
         ],
         "answer": 1,
         "explanation": "An unknown spill needs trained assessment, not improvised cleanup.",
         "critical": true
       },
-      "reference": "8: Emergencies",
+      "reference": "5 (pp. 58–69)",
       "figure": "emergency.svg",
       "figureAlt": "Warn others, move away from danger and call for help"
     }
@@ -359,10 +411,10 @@ window.COURSE = {
       "module": 7,
       "prompt": "A hazardous spill produces fumes and you are not trained to respond. What should you do?",
       "options": [
-        "Cover it with towels",
-        "Warn others, leave the affected area and summon emergency assistance",
-        "Keep working with gloves",
-        "Wait beside the spill"
+        "Isolate nearby equipment, then clean with the available spill kit.",
+        "Warn others, withdraw safely and call for emergency assistance.",
+        "Lower the hood sash, then stay nearby to monitor the fumes.",
+        "Check the SDS at the bench, then decide whether to evacuate."
       ],
       "answer": 1,
       "explanation": "Withdraw from danger, warn others and follow local alarm and reporting procedures. Cleanup requires appropriate training.",
@@ -372,15 +424,15 @@ window.COURSE = {
       "id": "q2",
       "sourceQuestion": 2,
       "module": 0,
-      "prompt": "Which behaviour conflicts with safe laboratory work?",
+      "prompt": "Which behavior conflicts with safe laboratory work?",
       "options": [
-        "Using required protection",
-        "Checking chemical hazards",
-        "Knowing emergency arrangements",
-        "Wearing loose accessories that can snag or become contaminated"
+        "Keeping a secured watch beneath the required protective clothing.",
+        "Tying back long hair before handling chemicals or hot equipment.",
+        "Keeping a lab coat fastened while performing chemical transfers.",
+        "Leaving loose jewelry exposed beside rotating or hot equipment."
       ],
       "answer": 3,
-      "explanation": "Loose or unsuitable accessories can create mechanical and contamination hazards. Follow local jewellery rules.",
+      "explanation": "Loose or unsuitable accessories can create mechanical and contamination hazards. Follow local jewelry rules.",
       "critical": false
     },
     {
@@ -389,13 +441,13 @@ window.COURSE = {
       "module": 7,
       "prompt": "The building fire alarm sounds. What is the appropriate response?",
       "options": [
-        "Leave by a safe route and go to the designated assembly point",
-        "Wait to see flames",
-        "Continue with more PPE",
-        "Return for your belongings"
+        "Evacuate by a safe route and report to the assembly point.",
+        "Finish putting equipment away, then check the alarm source.",
+        "Stay in the lab until a supervisor confirms there is a fire.",
+        "Wait outside the room so you can return when it is quiet."
       ],
       "answer": 0,
-      "explanation": "Follow evacuation instructions. Do not wait for visible fire or re-enter without authorisation.",
+      "explanation": "Follow evacuation instructions. Do not wait for visible fire or re-enter without authorization.",
       "critical": true
     },
     {
@@ -404,10 +456,10 @@ window.COURSE = {
       "module": 0,
       "prompt": "You are unsure how to use laboratory equipment. What should you do?",
       "options": [
-        "Try it cautiously",
-        "Ask any colleague, then start",
-        "Obtain training from an authorised competent person before use",
-        "Skip the instructions"
+        "Read the quick-start guide, then learn the controls using a low setting.",
+        "Ask an experienced user for tips, then proceed without formal sign-off.",
+        "Get authorized training and permission before operating the equipment.",
+        "Repeat a colleague's settings, then arrange training after your first use."
       ],
       "answer": 2,
       "explanation": "Training must match the equipment and procedure. An informal demonstration by an unqualified person is insufficient.",
@@ -419,10 +471,10 @@ window.COURSE = {
       "module": 2,
       "prompt": "Which situation can expose you to a health hazard?",
       "options": [
-        "Following a reviewed procedure",
-        "Breathing toxic fumes from an uncontrolled task",
-        "Using intact approved equipment",
-        "Working with functioning controls"
+        "Handling a toxic liquid while the assessed exposure controls work.",
+        "Breathing toxic vapor released by a task with failed ventilation.",
+        "Moving a toxic substance inside its intact secondary containment.",
+        "Reading the label of a toxic substance in a closed stock container."
       ],
       "answer": 1,
       "explanation": "Inhalation is an exposure route. Required ventilation and other controls must be established before work.",
@@ -434,10 +486,10 @@ window.COURSE = {
       "module": 7,
       "prompt": "A corrosive liquid splashes onto your skin. What is the priority?",
       "options": [
-        "Wait for symptoms",
-        "Apply a neutraliser",
-        "Begin the prescribed emergency flushing and summon help immediately",
-        "Finish the experiment"
+        "Wipe away the liquid, then rinse if irritation develops.",
+        "Neutralize the splash, then rinse away the reaction products.",
+        "Start emergency flushing and have someone summon help.",
+        "Find the SDS first, then choose the correct rinsing procedure."
       ],
       "answer": 2,
       "explanation": "For this specified splash, act immediately under the emergency procedure and obtain medical guidance. Do not neutralise chemicals on the body.",
@@ -449,10 +501,10 @@ window.COURSE = {
       "module": 5,
       "prompt": "Before leaving the lab, what should you check?",
       "options": [
-        "That every device is off, including ventilation",
-        "That equipment is in the prescribed safe state and continuing work has an approved handover",
-        "Only that lights are off",
-        "Nothing if a colleague remains"
+        "Switch off all equipment, including controls for continuing experiments.",
+        "Check the required safe state and handover for any continuing operation.",
+        "Leave equipment as it is if another trained person remains in the room.",
+        "Check the bench and lights, then assume automated systems can continue."
       ],
       "answer": 1,
       "explanation": "Shutdown and continuing operations must follow their specific instructions; do not disable safety controls or other experiments.",
@@ -464,13 +516,13 @@ window.COURSE = {
       "module": 7,
       "prompt": "What campus emergency number does the University of Twente publish?",
       "options": [
-        "053 489 2222",
-        "053 489 2134",
-        "911",
-        "A number chosen by each student"
+        "053 489 2222 — campus emergency response",
+        "053 489 2134 — campus emergency response",
+        "112 — internal UT campus emergency number",
+        "0900 8844 — campus emergency response"
       ],
       "answer": 0,
-      "explanation": "UT publishes 053 489 2222 as its campus emergency number. The 2134 number is for non-emergencies. Verify local calling arrangements during induction.",
+      "explanation": "UT publishes 053 489 2222 as its campus emergency number (2222 internally). The national Dutch emergency number is 112. These are different services; follow campus emergency instructions and know both numbers.",
       "critical": true
     },
     {
@@ -479,10 +531,10 @@ window.COURSE = {
       "module": 4,
       "prompt": "An approved procedure requires a fume hood for a volatile hazardous chemical. What must you establish before starting?",
       "options": [
-        "The hood is functioning and you can follow its operating instructions",
-        "Gloves alone are sufficient",
-        "There is a window nearby",
-        "The chemical has little smell"
+        "The hood works and the task can follow its operating instructions.",
+        "The sash closes and there is enough space to store the stock bottles.",
+        "The exhaust makes noise and no strong odor is detected at the sash.",
+        "The room is ventilated and compatible gloves are available for spills."
       ],
       "answer": 0,
       "explanation": "A required engineering control must function. Odour and additional PPE cannot substitute for it.",
@@ -494,13 +546,13 @@ window.COURSE = {
       "module": 7,
       "prompt": "You find a chemical spill but do not know the substance or whether you are trained to clean it. What should you do first?",
       "options": [
-        "Use the nearest spill kit",
-        "Warn others, avoid exposure and obtain trained assessment",
-        "Mix in water",
-        "Ask the cleaning crew and continue"
+        "Select absorbent from the spill kit after checking the liquid's color.",
+        "Warn others, avoid contact and arrange assessment by trained staff.",
+        "Dilute the spill slowly while asking a colleague to identify the liquid.",
+        "Cover the spill and continue nearby until the technician can attend."
       ],
       "answer": 1,
-      "explanation": "A spill kit is not blanket authorisation to clean up. Identify the hazard and the authorised response from safety.",
+      "explanation": "A spill kit is not blanket authorization to clean up. Identify the hazard and the authorized response from safety.",
       "critical": true
     },
     {
@@ -509,10 +561,10 @@ window.COURSE = {
       "module": 5,
       "prompt": "Why does an approved concentrated-acid dilution procedure add acid to water?",
       "options": [
-        "To increase acidity",
-        "To reduce local overheating and splashing from released heat",
-        "To avoid needing PPE",
-        "To make every chemical mixture safe"
+        "It makes the final acid concentration easier to calculate.",
+        "It helps control heat release and reduce violent splashing.",
+        "It prevents the diluted acid from retaining corrosive properties.",
+        "It removes the need for cooling during the addition step."
       ],
       "answer": 1,
       "explanation": "Dilution releases heat. Follow the approved procedure for addition, cooling and protection; this is not a rule for every reactive mixture.",
@@ -524,10 +576,10 @@ window.COURSE = {
       "module": 2,
       "prompt": "Why must peroxide-containing oxidising cleaning waste be kept out of organic solvent waste?",
       "options": [
-        "Organic solvent makes it harmless",
-        "It only changes colour",
-        "Mixing can cause a violent reaction, fire or explosion",
-        "All liquids belong in the same waste bottle"
+        "The solvent converts residual peroxide into a nonreactive dilution.",
+        "The mixture mainly creates a labeling problem for waste collection.",
+        "The combination may react violently, ignite or generate pressure.",
+        "The solvent container provides enough volume to absorb the reaction."
       ],
       "answer": 2,
       "explanation": "Strong oxidising mixtures can react dangerously with organic material. Keep incompatible wastes separate.",
@@ -539,10 +591,10 @@ window.COURSE = {
       "module": 4,
       "prompt": "What is the main protective purpose of a functioning chemical fume hood?",
       "options": [
-        "Store all chemicals",
-        "Heat samples",
-        "Control release of hazardous airborne contaminants into the room",
-        "Replace eye protection"
+        "Keep chemicals cool enough to limit their evaporation during storage.",
+        "Prevent splashes from reaching the user during any chemical transfer.",
+        "Capture hazardous airborne releases before they enter the room.",
+        "Remove every chemical hazard when the sash is at its marked height."
       ],
       "answer": 2,
       "explanation": "A hood is an engineering control for airborne exposure, used with the other prescribed measures.",
@@ -554,13 +606,13 @@ window.COURSE = {
       "module": 4,
       "prompt": "For work with a chemical splash risk, how should protection be selected?",
       "options": [
-        "Any gloves and ordinary glasses",
-        "Task-appropriate eye protection, compatible gloves, protective clothing and closed footwear",
-        "Only a face mask",
-        "By what feels comfortable"
+        "Use splash goggles and the gloves already available at the workbench.",
+        "Select eye, glove and clothing protection for the assessed splash risk.",
+        "Use a face shield and gloves, with ordinary glasses beneath the shield.",
+        "Choose the thickest gloves and coat without checking compatibility."
       ],
       "answer": 1,
-      "explanation": "Protection must match the assessed hazard. Splash goggles and further face or body protection may be required; a face shield does not replace eye protection.",
+      "explanation": "Select chemical splash eye protection, chemically compatible gloves, protective clothing and closed footwear for the task. A face shield supplements the required eye protection. Glove thickness alone does not establish chemical compatibility.",
       "critical": true
     },
     {
@@ -569,10 +621,10 @@ window.COURSE = {
       "module": 6,
       "prompt": "Which storage practice is unsafe?",
       "options": [
-        "Keeping containers identified",
-        "Separating incompatibles",
-        "Using designated storage",
-        "Putting all chemicals together without checking compatibility"
+        "Keeping each container labeled and using the assigned storage area.",
+        "Separating chemicals according to the approved compatibility groups.",
+        "Using compatible secondary containment for stored liquid chemicals.",
+        "Grouping chemicals alphabetically before checking incompatibilities."
       ],
       "answer": 3,
       "explanation": "Compatibility determines segregation. Neither alphabetical order nor convenience is sufficient.",
@@ -584,10 +636,10 @@ window.COURSE = {
       "module": 2,
       "prompt": "What makes HF exposure especially dangerous?",
       "options": [
-        "It affects only the skin surface",
-        "It is harmless without pain",
-        "It can penetrate tissue and disturb calcium balance, causing systemic toxicity",
-        "It becomes harmless when dilute"
+        "The main risk is a visible surface burn that immediately becomes painful.",
+        "The main risk ends after dilution because tissue penetration then stops.",
+        "Tissue penetration can disrupt calcium balance and harm the whole body.",
+        "Delayed pain indicates a superficial injury that can wait for routine care."
       ],
       "answer": 2,
       "explanation": "HF can cause severe systemic injury and delayed pain. Suspected exposure needs immediate emergency assistance.",
@@ -599,10 +651,10 @@ window.COURSE = {
       "module": 7,
       "prompt": "A colleague has a suspected hazardous chemical exposure. How should you respond?",
       "options": [
-        "Wait for obvious symptoms",
-        "Alert emergency help and assist within your training without exposing yourself",
-        "Let them manage alone",
-        "Report only at the end of the day"
+        "Check whether symptoms persist before requesting emergency assistance.",
+        "Summon help and provide trained assistance without exposing yourself.",
+        "Complete the incident report before interrupting anyone else's work.",
+        "Move the person through the affected area to retrieve their belongings."
       ],
       "answer": 1,
       "explanation": "Prompt assistance matters. Follow the exposure-specific emergency procedure and avoid becoming another casualty.",
@@ -614,13 +666,13 @@ window.COURSE = {
       "module": 5,
       "prompt": "Why is an acetone spill near an operating hot plate hazardous?",
       "options": [
-        "It is only corrosive",
-        "The plate neutralises acetone",
-        "Flammable vapour may encounter an ignition source",
-        "Acetone cannot burn without a flame"
+        "Acetone reacts with the hot plate surface to produce corrosive vapor.",
+        "Heat suppresses acetone vapor once the liquid has evaporated fully.",
+        "Acetone vapor can ignite at the heater or its electrical components.",
+        "An electric heater is safe here because it does not have an open flame."
       ],
       "answer": 2,
-      "explanation": "A hot surface or electrical component can ignite flammable vapour. An absence of open flame does not establish safety.",
+      "explanation": "A hot surface or electrical component can ignite flammable vapor. An absence of open flame does not establish safety.",
       "critical": false
     },
     {
@@ -629,10 +681,10 @@ window.COURSE = {
       "module": 5,
       "prompt": "When moving chemicals through doors, what should you ensure?",
       "options": [
-        "Closed containers in suitable containment, a secure grip and clean door contact",
-        "Both contaminated gloves touch handles",
-        "Carry open bottles to see the contents",
-        "Remove all protection regardless of the task"
+        "Use closed contained bottles, a secure grip and clean door contact.",
+        "Remove both gloves and carry the closed stock bottle by its neck.",
+        "Keep both gloves on and wipe the door handle after the transfer.",
+        "Carry the closed bottle against your coat to keep one hand free."
       ],
       "answer": 0,
       "explanation": "Avoid contaminating shared handles while retaining safe containment and grip. Use the approved local method.",
@@ -644,18 +696,18 @@ window.COURSE = {
       "module": 2,
       "prompt": "Why does aqua regia require a specific approved procedure and waste route?",
       "options": [
-        "It is harmless once cooled",
-        "Only its colour matters",
-        "It is corrosive, can release harmful gases and can react violently with organic material",
-        "It can be added to any solvent waste"
+        "Its main hazard is acidity, so dilution makes solvent-waste mixing safe.",
+        "Its released gases are the concern, so a hood removes the waste hazard.",
+        "Corrosion, harmful gases and organic incompatibility all need control.",
+        "Cooling stops its reactivity, so cooled residues use ordinary acid waste."
       ],
       "answer": 2,
       "explanation": "The combined corrosive, gas and reactivity hazards require dedicated assessment, training and controls.",
       "critical": true
     }
   ],
-  "source": "https://institute.acs.org/acs-center/lab-safety/education-training/college-univ-guidelines/laboratory-safety-for-chemistry-students-etextbook.html",
-  "examMinutes": 30,
+  "source": "https://www.acs.org/content/dam/acsorg/about/governance/committees/chemicalsafety/publications/safety-in-academic-chemistry-laboratories-students.pdf",
+  "examMinutes": 15,
   "supplement": [
     {
       "title": "Cryogenic liquids",
@@ -663,7 +715,7 @@ window.COURSE = {
     },
     {
       "title": "Deposition equipment",
-      "text": "Thin-film systems can involve vacuum, pressure, heat, electricity and process gases. Only trained authorised users may operate or maintain them. Follow the equipment procedure, interlocks and approved isolation arrangements; never improvise maintenance on an energised system."
+      "text": "Thin-film systems can involve vacuum, pressure, heat, electricity and process gases. Only trained authorized users may operate or maintain them. Follow the equipment procedure, interlocks and approved isolation arrangements; never improvise maintenance on an energized system."
     },
     {
       "title": "Excimer lasers",
@@ -690,6 +742,10 @@ window.COURSE = {
     {
       "title": "ACS Safety in Academic Chemistry Laboratories, eighth edition",
       "url": "https://www.acs.org/content/dam/acsorg/about/governance/committees/chemicalsafety/publications/safety-in-academic-chemistry-laboratories-students.pdf"
+    },
+    {
+      "title": "Netherlands national emergency number: 112",
+      "url": "https://www.government.nl/themes/justice-security-and-defence/emergency-number-112"
     },
     {
       "title": "University of Twente emergency number",
