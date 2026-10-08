@@ -45,7 +45,7 @@ window.COURSE = {
         "explanation": "General knowledge does not replace training for the actual procedure.",
         "critical": true
       },
-      "reference": "1 (pp. 10â€“13) and 2 (pp. 14â€“25)",
+      "reference": "1 (pp. 10–13) and 2 (pp. 14–25)",
       "figure": "ramp.svg",
       "figureAlt": "RAMP cycle: recognize, assess, minimize and prepare"
     },
@@ -83,7 +83,7 @@ window.COURSE = {
         "explanation": "Appearance and location cannot establish chemical identity.",
         "critical": true
       },
-      "reference": "3 (pp. 40â€“44)",
+      "reference": "3 (pp. 40–44)",
       "figure": "sds.svg",
       "figureAlt": "Safety data sheet sections that support planning"
     },
@@ -137,7 +137,7 @@ window.COURSE = {
         "explanation": "Odour is not a reliable measure of exposure or safety.",
         "critical": false
       },
-      "reference": "3 (pp. 26â€“39)",
+      "reference": "3 (pp. 26–39)",
       "figure": "exposure.svg",
       "figureAlt": "Exposure routes: breathing, skin, mouth and puncture"
     },
@@ -175,7 +175,7 @@ window.COURSE = {
         "explanation": "Scaling can change heat removal, gas generation and the controls required.",
         "critical": false
       },
-      "reference": "1 (pp. 10â€“13) and 4 (pp. 46â€“48)",
+      "reference": "1 (pp. 10–13) and 4 (pp. 46–48)",
       "figure": "risk.svg",
       "figureAlt": "Risk depends on task conditions and controls"
     },
@@ -238,7 +238,7 @@ window.COURSE = {
         "explanation": "Use bare fingers inside the cuff to peel the second glove inside out. Discard the gloves in the appropriate waste stream, then wash your hands.",
         "critical": true
       },
-      "reference": "2 (pp. 16â€“18) and 4 (pp. 47, 50)",
+      "reference": "2 (pp. 16–18) and 4 (pp. 47, 50)",
       "figure": "controls.svg",
       "figureAlt": "Controls from eliminating the hazard to personal protection",
       "extraFigure": "fume-hood.svg",
@@ -332,7 +332,7 @@ window.COURSE = {
         "explanation": "Cracks can lead to failure during handling, heating or pressure changes.",
         "critical": false
       },
-      "reference": "4 (pp. 48â€“57)",
+      "reference": "4 (pp. 48–57)",
       "figure": "transport.svg",
       "figureAlt": "Closed container, secondary containment and clean door contact",
       "extraFigure": "contained-transfer.svg",
@@ -376,7 +376,7 @@ window.COURSE = {
         "explanation": "Confirm compatibility before mixing any waste.",
         "critical": true
       },
-      "reference": "2 (pp. 20â€“22) and 3 (pp. 37â€“39), with 4 (p. 53)",
+      "reference": "2 (pp. 20–22) and 3 (pp. 37–39), with 4 (p. 53)",
       "figure": "waste.svg",
       "figureAlt": "Check waste identity and compatibility before choosing a stream"
     },
@@ -439,7 +439,7 @@ window.COURSE = {
         "explanation": "An unknown spill needs trained assessment, not improvised cleanup.",
         "critical": true
       },
-      "reference": "5 (pp. 58â€“69)",
+      "reference": "5 (pp. 58–69)",
       "figure": "emergency.svg",
       "figureAlt": "Warn others, move away from danger and call for help"
     }
@@ -556,10 +556,10 @@ window.COURSE = {
       "module": 7,
       "prompt": "What campus emergency number does the University of Twente publish?",
       "options": [
-        "053 489 2222 â€” campus emergency response",
-        "053 489 2134 â€” campus emergency response",
-        "112 â€” internal UT campus emergency number",
-        "0900 8844 â€” campus emergency response"
+        "053 489 2222 — campus emergency response",
+        "053 489 2134 — campus emergency response",
+        "112 — internal UT campus emergency number",
+        "0900 8844 — campus emergency response"
       ],
       "answer": 0,
       "explanation": "UT publishes 053 489 2222 as its campus emergency number (2222 internally). The national Dutch emergency number is 112. These are different services; follow campus emergency instructions and know both numbers.",
