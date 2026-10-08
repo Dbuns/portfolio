@@ -1,6 +1,6 @@
 (function(root){
   'use strict';
-  function empty(){return {done:[],name:'',result:null,active:null,expired:null};}
+  function empty(){return {done:[],name:'',acknowledgment:null,result:null,active:null,expired:null};}
   function validAnswers(input,c){const a={};c.questions.forEach(q=>{const v=input?.[q.id];if(Number.isInteger(v)&&v>=0&&v<q.options.length)a[q.id]=v;});return a;}
   function score(a,c){return 100*c.questions.filter(q=>a[q.id]===q.answer).length/c.questions.length;}
   function sanitise(raw,c){
@@ -15,11 +15,15 @@
     const a=raw.active;
     if(!s.result&&a&&Number.isFinite(a.started)&&Number.isFinite(a.deadline)&&a.deadline===a.started+c.examMinutes*60000&&typeof a.attemptId==='string')s.active={started:a.started,deadline:a.deadline,attemptId:a.attemptId.slice(0,80),answers:validAnswers(a.answers,c),warned:a.warned===true};
     const e=raw.expired;if(e&&Number.isFinite(e.deadline))s.expired={deadline:e.deadline,answers:validAnswers(e.answers,c),acknowledged:e.acknowledged===true};
+    const ack=raw.acknowledgment;
+    if(ack&&ack.name===s.name&&ack.version===c.version&&ack.attemptId===s.result?.attemptId&&Number.isFinite(Date.parse(ack.date))&&eligible(s,c))s.acknowledgment={name:s.name,version:c.version,attemptId:s.result.attemptId,date:ack.date};
     return s;
   }
   function eligible(s,c){return s.done.length===c.modules.length&&!!s.result&&score(s.result.answers,c)>=c.passPercent&&c.questions.every(q=>!q.critical||s.result.answers[q.id]===q.answer||s.result.corrected.includes(q.id));}
-  function start(s,c,now,id){if(s.done.length!==c.modules.length||s.active||s.result)return false;s.active={started:now,deadline:now+c.examMinutes*60000,answers:{},attemptId:id,warned:false};s.expired=null;return true;}
+  function certificateReady(s,c){const a=s.acknowledgment;return eligible(s,c)&&!!s.name.trim()&&!!a&&a.name===s.name&&a.version===c.version&&a.attemptId===s.result.attemptId&&Number.isFinite(Date.parse(a.date));}
+  function acknowledge(s,c,name,now){if(!eligible(s,c)||typeof name!=='string'||!name.trim()||!Number.isFinite(now))return false;s.name=name.trim().slice(0,100);s.acknowledgment={name:s.name,version:c.version,attemptId:s.result.attemptId,date:new Date(now).toISOString()};return true;}
+  function start(s,c,now,id){if(s.done.length!==c.modules.length||s.active||s.result)return false;s.active={started:now,deadline:now+c.examMinutes*60000,answers:{},attemptId:id,warned:false};s.expired=null;s.acknowledgment=null;return true;}
   function expire(s,now){if(!s.active||now<s.active.deadline)return false;s.expired={deadline:s.active.deadline,answers:{...s.active.answers},acknowledged:false};s.active=null;s.result=null;return true;}
-  function submit(s,c,now){if(expire(s,now))return 'expired';if(!s.active)return 'inactive';s.result={answers:{...s.active.answers},score:score(s.active.answers,c),corrected:[],date:new Date(now).toISOString(),attemptId:s.active.attemptId};s.active=null;return 'submitted';}
-  root.ExamEngine={empty,sanitise,validAnswers,score,eligible,start,expire,submit};
+  function submit(s,c,now){if(expire(s,now))return 'expired';if(!s.active)return 'inactive';s.result={answers:{...s.active.answers},score:score(s.active.answers,c),corrected:[],date:new Date(now).toISOString(),attemptId:s.active.attemptId};s.active=null;s.acknowledgment=null;return 'submitted';}
+  root.ExamEngine={empty,sanitise,validAnswers,score,eligible,certificateReady,acknowledge,start,expire,submit};
 })(typeof window!=='undefined'?window:globalThis);

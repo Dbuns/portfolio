@@ -1,5 +1,5 @@
 window.COURSE = {
-  "version": "0.4-review",
+  "version": "0.5-review",
   "title": "Chemical Laboratory Safety Foundations",
   "passPercent": 80,
   "modules": [
@@ -17,7 +17,7 @@ window.COURSE = {
         },
         {
           "title": "Speak up and pause",
-          "text": "If instructions are missing, equipment behaves unexpectedly or a control is unavailable, pause and contact the supervisor or technician. Do not improvise a substitute procedure. Report incidents and near misses so the group can prevent recurrence."
+          "text": "If instructions are missing, equipment behaves unexpectedly or a control is unavailable, pause and contact the supervisor or technician. Do not improvise a substitute procedure. Report incidents and near misses so the group can prevent recurrence. Report unusual odors, unexpected noise, damaged equipment and missing safety controls. Do not investigate a suspected hazardous release by deliberately smelling it."
         },
         {
           "title": "Everyday behavior",
@@ -29,7 +29,7 @@ window.COURSE = {
         },
         {
           "title": "Supervision and visitors",
-          "text": "Know who is responsible for the work and the rules for working alone. Do not begin hazardous work alone without the required authorization and arrangements. Visitors need permission, appropriate protection and supervision; an experienced visitor is not automatically trained for your laboratory."
+          "text": "Use only your own authorized access; do not lend keys or access credentials or admit an unapproved visitor. Visitors need permission, suitable protection and supervision. Working alone or outside normal hours requires the local approval, risk assessment and contact arrangements for that task; access to the building is not permission to perform an experiment. Obtain training and authorization for equipment before using it."
         }
       ],
       "practice": {
@@ -160,6 +160,10 @@ window.COURSE = {
         {
           "title": "Pre-start check",
           "text": "Can you explain the main hazards? Are the controls available and working? Do you have the right equipment and training? Do you know how to stop safely and summon help? Resolve any gap before beginning."
+        },
+        {
+          "title": "Before a new chemical arrives",
+          "text": "Obtain the required approval before ordering or bringing chemicals into the laboratory, including material from another group. Check the SDS, intended quantities, suitable storage, handling controls and waste route in advance. Make sure the responsible person can register and manage the material; an available supplier or bottle does not establish that it is approved for use."
         }
       ],
       "practice": {
@@ -193,7 +197,7 @@ window.COURSE = {
         },
         {
           "title": "Gloves are chemical-specific",
-          "text": "No glove protects against every chemical. Check compatibility, thickness and expected contact time using approved selection guidance. Inspect gloves and replace them when damaged or contaminated. Avoid transferring contamination to clean surfaces."
+          "text": "No glove protects against every chemical. Check compatibility, thickness and expected contact time using approved selection guidance. Inspect gloves and replace them when damaged or contaminated. Avoid transferring contamination to clean surfaces. Thin disposable nitrile gloves are not suitable for every solvent or prolonged contact. Consult the manufacturer’s compatibility and breakthrough guidance for the actual chemicals and glove model. Reusable or multilayer gloves require their own inspection, removal and decontamination procedure; a visibly clean glove is not proof of chemical protection."
         },
         {
           "title": "Remove disposable gloves without spreading contamination",
@@ -249,18 +253,21 @@ window.COURSE = {
       "objective": "Recognize unsafe setup, transfer and housekeeping practices.",
       "sections": [
         {
-          "title": "Use the experiment tracking sheet",
+          "title": "Display the experiment information card",
           "scope": "ut",
-          "text": "The group experiment tracking sheet makes ongoing work understandable to other users and responders. It records experiment information, name and phone number, start date/time, end date/time, chemicals used, and hazard-symbol checkboxes. It supports safe communication and handover alongside the approved procedure and risk assessment.",
+          "text": "The group uses an experiment information card placed beside the setup so other users and responders can identify ongoing work and contact the experimenter. It records experiment information, name and phone number, start date/time, end date/time, chemicals used, and hazard-symbol checkboxes. Complete it alongside the approved procedure and risk assessment before starting.",
           "steps": [
             "Describe the work in Experiment information so another trained person can understand what is taking place.",
             "Enter your name and phone number so the responsible experimenter can be contacted.",
             "Complete the start date/time and end date/time fields following the group instructions. Keep the record accurate when the schedule or status changes.",
             "List the chemicals used. Use their actual labels and SDSs, together with the task assessment, to identify the relevant hazards.",
             "Select the applicable hazard-symbol checkboxes. Do not treat the symbols alone as a complete description of reaction, equipment or process hazards.",
-            "Keep the sheet consistent with the approved work and any required handover. Record the final status as instructed; a completed sheet does not itself authorize unattended work."
+            "Keep the card visible beside the setup and update it when the schedule, chemicals or status changes. Follow the group’s handover instructions; a completed card does not itself authorize unattended work."
           ],
-          "after": "A name and phone number identify who can explain the experiment; dates and times show its recorded schedule; the chemical list and hazard boxes alert others to relevant dangers. The sheet does not replace the SDS, risk assessment, equipment training or emergency instructions. An approved photo of the blank form can be added later."
+          "after": "The card communicates who is responsible, the recorded schedule and relevant chemical hazards. It does not replace the SDS, risk assessment, equipment training or emergency instructions.",
+          "image": "experiment-card.png",
+          "imageAlt": "Blank experiment information card beside laboratory equipment, with experiment, contact, time, chemical and hazard fields.",
+          "imageCaption": "The group’s experiment information card, designed and photographed by Daniel Cunha. Keep the completed card beside the experiment."
         },
         {
           "title": "Prepare the workspace",
@@ -272,7 +279,7 @@ window.COURSE = {
         },
         {
           "title": "Prevent contamination",
-          "text": "Keep containers closed when not in use. Label working solutions according to local rules and avoid returning excess material to stock containers. Keep clean items separate from contaminated equipment. Do not carry chemicals in your pockets."
+          "text": "Keep containers closed when not in use. Label working solutions according to local rules and avoid returning excess material to stock containers. Keep clean items separate from contaminated equipment. Do not carry chemicals in your pockets. Identify working mixtures with the actual chemical composition and concentration, preparation date and hazards as required by the local labeling system. Washing with water or wiping with ethanol does not establish that an item is free of every chemical contaminant."
         },
         {
           "title": "Finish the task",
@@ -348,7 +355,7 @@ window.COURSE = {
         },
         {
           "title": "Plan waste before starting",
-          "text": "Identify the waste stream before generating it. Use designated compatible containers and required labels. Do not add material when the contents or compatibility are uncertain. Ask the technician."
+          "text": "Identify the waste stream before generating it. Use designated compatible containers and required labels. Do not add material when the contents or compatibility are uncertain. Ask the technician. Follow the approved container closure and venting instructions for the actual waste; do not loosen caps or improvise venting to manage an unexpected reaction or pressure buildup. Stop and obtain help if the safe collection method is unclear."
         },
         {
           "title": "Avoid hazardous mixtures",
@@ -356,7 +363,7 @@ window.COURSE = {
         },
         {
           "title": "Special waste",
-          "text": "Sharps, broken glass, contaminated solids and chemical packaging may have different routes. An empty-looking container may still be contaminated. Follow instructions for closure, filling limits and collection."
+          "text": "Sharps, broken glass, contaminated solids and chemical packaging may have different routes. An empty-looking container may still be contaminated. Follow instructions for closure, filling limits and collection. Contaminated rinse water is also waste: do not assume dilution makes it suitable for the drain. Collect it by the approved route unless that specific discharge has been authorized. Chemical-contaminated packaging is not automatically clean recycling. Confirm the local separation of halogenated and nonhalogenated solvent waste; do not copy another laboratory’s concentration thresholds or container colors."
         },
         {
           "title": "Refrigerated chemical storage",
@@ -402,7 +409,11 @@ window.COURSE = {
         },
         {
           "title": "University of Twente emergency contact",
-          "text": "In the Netherlands, 112 is the national emergency number for urgent police, fire or ambulance assistance. UT publishes 053 489 2222 (+31 53 489 2222) as its campus emergency number, or 2222 internally. Know both numbers and follow the campus emergency instructions. Give your building, room, incident and any injuries when calling. During orientation, verify how to call from your phone. On a building alarm, follow the evacuation route to the designated assembly point and do not re-enter until authorized."
+          "text": "In the Netherlands, 112 is the national emergency number for urgent police, fire or ambulance assistance. UT publishes 053 489 2222 (+31 53 489 2222) as its campus emergency number, or 2222 internally. Know both numbers and follow the campus emergency instructions. Give your building, room, incident and any injuries when calling. During orientation, verify how to call from your phone. On a building alarm, follow the evacuation route to the designated assembly point and do not re-enter until authorized. Use the designated evacuation stairs rather than elevators. Never delay evacuation to shut down equipment or fight a fire; take an action only when the emergency procedure permits it and it is safe.",
+          "scope": "ut",
+          "image": "ut-emergency-sign.jpg",
+          "imageAlt": "Example UT emergency instruction sign showing campus emergency number 053 489 2222 and evacuation symbols.",
+          "imageCaption": "Example sign from the supplied IMS protocol. Its Nanolab assembly point is building-specific: learn the point for your own building. Follow current local instructions; firefighting requires training and a safe escape route."
         },
         {
           "title": "Use the eyewash and safety shower",
@@ -802,6 +813,10 @@ window.COURSE = {
     {
       "title": "OSHA: extinguisher awareness and technique (not Dutch regulatory guidance)",
       "url": "https://www.osha.gov/etools/evacuation-plans-procedures/emergency-standards/portable-extinguishers/use"
+    },
+    {
+      "title": "Glove selection and chemical compatibility — Princeton Environmental Health and Safety",
+      "url": "https://ehs.princeton.edu/laboratory-research/laboratory-safety/ppe-the-lab/gloves"
     }
   ]
 };
