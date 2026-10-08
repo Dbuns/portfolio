@@ -1,5 +1,5 @@
 window.COURSE = {
-  "version": "0.3-review",
+  "version": "0.4-review",
   "title": "Chemical Laboratory Safety Foundations",
   "passPercent": 80,
   "modules": [
@@ -32,7 +32,6 @@ window.COURSE = {
           "text": "Know who is responsible for the work and the rules for working alone. Do not begin hazardous work alone without the required authorization and arrangements. Visitors need permission, appropriate protection and supervision; an experienced visitor is not automatically trained for your laboratory."
         }
       ],
-      "local": "Identify the supervisor, technician, reporting route, access rules and policy on working alone.",
       "practice": {
         "id": "q1",
         "module": 0,
@@ -46,7 +45,7 @@ window.COURSE = {
         "explanation": "General knowledge does not replace training for the actual procedure.",
         "critical": true
       },
-      "reference": "1 (pp. 10–13) and 2 (pp. 14–25)",
+      "reference": "1 (pp. 10â€“13) and 2 (pp. 14â€“25)",
       "figure": "ramp.svg",
       "figureAlt": "RAMP cycle: recognize, assess, minimize and prepare"
     },
@@ -71,7 +70,6 @@ window.COURSE = {
           "text": "Danger and Warning are signal words indicating different levels of hazard within the labeling system. A lower category number generally indicates a more severe hazard within a given hazard class; do not compare category numbers across different classes. Read hazard and precautionary statements as well as pictograms. Follow the local standard for labeling working solutions with identity and hazard information."
         }
       ],
-      "local": "Add your SDS access method, container labeling standard and unknown-container reporting procedure.",
       "practice": {
         "id": "q2",
         "module": 1,
@@ -85,7 +83,7 @@ window.COURSE = {
         "explanation": "Appearance and location cannot establish chemical identity.",
         "critical": true
       },
-      "reference": "3 (pp. 40–44)",
+      "reference": "3 (pp. 40â€“44)",
       "figure": "sds.svg",
       "figureAlt": "Safety data sheet sections that support planning"
     },
@@ -126,7 +124,6 @@ window.COURSE = {
           "text": "Some substances can cause cancer, genetic damage or reproductive harm; others damage particular organs or cause allergic sensitization. Repeated exposure can matter even when each individual exposure seems small. A sensitized person may react to very low exposure. Assess the actual substance, route and exposure pattern, and seek occupational-health advice about individual concerns without relying on symptoms to judge safety."
         }
       ],
-      "local": "List the hazards actually present and the activities needing additional training.",
       "practice": {
         "id": "q3",
         "module": 2,
@@ -140,7 +137,7 @@ window.COURSE = {
         "explanation": "Odour is not a reliable measure of exposure or safety.",
         "critical": false
       },
-      "reference": "3 (pp. 26–39)",
+      "reference": "3 (pp. 26â€“39)",
       "figure": "exposure.svg",
       "figureAlt": "Exposure routes: breathing, skin, mouth and puncture"
     },
@@ -165,7 +162,6 @@ window.COURSE = {
           "text": "Can you explain the main hazards? Are the controls available and working? Do you have the right equipment and training? Do you know how to stop safely and summon help? Resolve any gap before beginning."
         }
       ],
-      "local": "Insert the group risk-assessment template, approval route and change-review requirements.",
       "practice": {
         "id": "q4",
         "module": 3,
@@ -179,7 +175,7 @@ window.COURSE = {
         "explanation": "Scaling can change heat removal, gas generation and the controls required.",
         "critical": false
       },
-      "reference": "1 (pp. 10–13) and 4 (pp. 46–48)",
+      "reference": "1 (pp. 10â€“13) and 4 (pp. 46â€“48)",
       "figure": "risk.svg",
       "figureAlt": "Risk depends on task conditions and controls"
     },
@@ -200,29 +196,49 @@ window.COURSE = {
           "text": "No glove protects against every chemical. Check compatibility, thickness and expected contact time using approved selection guidance. Inspect gloves and replace them when damaged or contaminated. Avoid transferring contamination to clean surfaces."
         },
         {
+          "title": "Remove disposable gloves without spreading contamination",
+          "text": "Treat the outer glove surfaces as contaminated. For ordinary single-layer disposable gloves, use this sequence; specialized gloves, double gloves or unusual contamination require the approved task-specific method. Work over the designated waste area and keep your hands away from your face, clothing, phone and door handles.",
+          "steps": [
+            "With one still-gloved hand, pinch the outside of the opposite glove near the wrist. Avoid touching bare skin.",
+            "Peel that glove away from the hand, turning it inside out as you remove it.",
+            "Keep the removed glove in the hand that is still wearing a glove.",
+            "Slide the fingers of your bare hand under the inside cuff of the remaining glove. Do not grasp its contaminated outside.",
+            "Peel the second glove off from the inside, turning it inside out around the first glove.",
+            "Place both gloves in the waste stream required for their chemical contamination. Wash your hands with soap and water; do not reuse disposable gloves."
+          ],
+          "after": "The principle is gloved hand to contaminated outside, then bare hand to the inside cuff. Glove removal can still contaminate skin, which is why handwashing matters. If a chemical reaches your skin, start the appropriate exposure response rather than treating handwashing as sufficient first aid.",
+          "sourceUrl": "https://www.cdc.gov/ebola/hcp/communication-resources/how-to-remove-gloves-safely.html",
+          "sourceLabel": "See the CDC glove-removal illustrations (hand technique; chemical waste rules remain local)."
+        },
+        {
           "title": "A fume hood must function",
           "text": "Check the operating indicator and use the specified sash position. Keep the face and body outside the opening, avoid obstructing airflow and arrange work according to local instructions. A hood is not a general storage cupboard or a guarantee against explosion. If an alarm or ventilation failure occurs, stop safely and notify the responsible person."
         },
         {
           "title": "Clothing, glasses and clean hands",
           "text": "Cover legs and wear closed shoes as required by the laboratory rules; shorts and open footwear leave skin exposed. Ordinary prescription glasses and contact lenses do not replace required chemical splash goggles. Do not adjust contact lenses with contaminated hands. Remove gloves without transferring contamination to the skin, and wash your hands after removing them and before leaving."
+        },
+        {
+          "title": "Shared UT fume hoods: a check before each use",
+          "scope": "ut",
+          "text": "Learn the controls and markings on the hood model used in your group. Before each task, check its airflow/status indicator and put the sash at the marked operating position. Keep your head outside and leave airflow openings clear. The hood removes hazardous airborne releases; it does not make an incompatible reaction safe. If the indicator is abnormal or an alarm sounds, stop safely and contact the responsible staff. Matching hood models still need an individual check before use.",
+          "after": "The technician will confirm the actual indicator, sash mark and approved setup with a photo or demonstration. Do not infer a numerical sash height from this general course."
         }
       ],
-      "local": "Confirm eye protection, lab-coat and glove requirements; add photographs and operating instructions for your hoods.",
       "practice": {
-        "id": "q5",
+        "id": "practice-gloves",
         "module": 4,
-        "prompt": "The fume hood alarm sounds during preparation. What should you do?",
+        "prompt": "After removing the first glove, where should your bare fingers touch the remaining glove?",
         "options": [
-          "Continue with thicker gloves while keeping the hood sash at its mark.",
-          "Finish the transfer quickly and report the ventilation failure afterward.",
-          "Stop safely and arrange assessment of the hood before resuming work."
+          "The outer surface near the wrist, after wiping it with a paper towel.",
+          "The fingertips, where there is usually less contamination than at the wrist.",
+          "The inside cuff, avoiding contact with the contaminated outer surface."
         ],
         "answer": 2,
-        "explanation": "Required ventilation must function; additional PPE is not a substitute.",
+        "explanation": "Use bare fingers inside the cuff to peel the second glove inside out. Discard the gloves in the appropriate waste stream, then wash your hands.",
         "critical": true
       },
-      "reference": "2 (pp. 16–18) and 4 (pp. 47, 50)",
+      "reference": "2 (pp. 16â€“18) and 4 (pp. 47, 50)",
       "figure": "controls.svg",
       "figureAlt": "Controls from eliminating the hazard to personal protection",
       "extraFigure": "fume-hood.svg",
@@ -232,6 +248,20 @@ window.COURSE = {
       "title": "Safe laboratory work",
       "objective": "Recognize unsafe setup, transfer and housekeeping practices.",
       "sections": [
+        {
+          "title": "Use the experiment tracking sheet",
+          "scope": "ut",
+          "text": "The group experiment tracking sheet makes ongoing work understandable to other users and responders. It records experiment information, name and phone number, start date/time, end date/time, chemicals used, and hazard-symbol checkboxes. It supports safe communication and handover alongside the approved procedure and risk assessment.",
+          "steps": [
+            "Describe the work in Experiment information so another trained person can understand what is taking place.",
+            "Enter your name and phone number so the responsible experimenter can be contacted.",
+            "Complete the start date/time and end date/time fields following the group instructions. Keep the record accurate when the schedule or status changes.",
+            "List the chemicals used. Use their actual labels and SDSs, together with the task assessment, to identify the relevant hazards.",
+            "Select the applicable hazard-symbol checkboxes. Do not treat the symbols alone as a complete description of reaction, equipment or process hazards.",
+            "Keep the sheet consistent with the approved work and any required handover. Record the final status as instructed; a completed sheet does not itself authorize unattended work."
+          ],
+          "after": "A name and phone number identify who can explain the experiment; dates and times show its recorded schedule; the chemical list and hazard boxes alert others to relevant dangers. The sheet does not replace the SDS, risk assessment, equipment training or emergency instructions. An approved photo of the blank form can be added later."
+        },
         {
           "title": "Prepare the workspace",
           "text": "Inspect glassware for damage and use equipment appropriate to the task. Secure apparatus and keep cables and tubing away from walkways and heat. Know the shutdown procedure. Do not use damaged electrical equipment; report it."
@@ -289,7 +319,6 @@ window.COURSE = {
           "text": "Keep electrical equipment and connections dry, inspect cords and plugs, and report damage or overheating. Know the controls: a stirrer dial and a heater dial may look similar. Disconnect or isolate equipment only as instructed, and do not improvise electrical repairs. UV lamps can injure eyes and skin; use the required enclosure and shielding, and task-specific protection. Ordinary safety glasses are not a guarantee of UV protection."
         }
       ],
-      "local": "Add equipment demonstrations, transfer routes, unattended-operation rules and broken-glass arrangements.",
       "practice": {
         "id": "q6",
         "module": 5,
@@ -303,7 +332,7 @@ window.COURSE = {
         "explanation": "Cracks can lead to failure during handling, heating or pressure changes.",
         "critical": false
       },
-      "reference": "4 (pp. 48–57)",
+      "reference": "4 (pp. 48â€“57)",
       "figure": "transport.svg",
       "figureAlt": "Closed container, secondary containment and clean door contact",
       "extraFigure": "contained-transfer.svg",
@@ -334,7 +363,6 @@ window.COURSE = {
           "text": "Use a refrigerator or freezer approved for the material. Flammable liquids must not be stored in an ordinary household refrigerator; the unit must be explicitly rated for flammable-material storage. Label containers, provide suitable spill containment and keep incompatible chemicals separated. Never store food or drinks for consumption in a chemical refrigerator."
         }
       ],
-      "local": "Provide actual waste categories, label examples, storage locations and collection contacts.",
       "practice": {
         "id": "q7",
         "module": 6,
@@ -348,7 +376,7 @@ window.COURSE = {
         "explanation": "Confirm compatibility before mixing any waste.",
         "critical": true
       },
-      "reference": "2 (pp. 20–22) and 3 (pp. 37–39), with 4 (p. 53)",
+      "reference": "2 (pp. 20â€“22) and 3 (pp. 37â€“39), with 4 (p. 53)",
       "figure": "waste.svg",
       "figureAlt": "Check waste identity and compatibility before choosing a stream"
     },
@@ -383,9 +411,21 @@ window.COURSE = {
         {
           "title": "Clothing fires and other injuries",
           "text": "If clothing catches fire, do not run. Use the practiced emergency response: stop, drop and roll, or use an immediately accessible safety shower, while someone summons help. Never wrap a standing person in a fire blanket. For electrical shock, do not touch a person who may still be connected to live power; obtain emergency help and safe isolation. Move someone from fumes only if you can do so without entering a hazardous atmosphere. Do not induce vomiting after chemical ingestion; obtain emergency medical advice."
+        },
+        {
+          "title": "Recognize fire equipment and know your limits",
+          "scope": "ut",
+          "text": "Find the alarm point and fire extinguishers near your work area before starting. Learn the extinguisher type and its label with the technician; one type is not suitable for every fire. Raising the alarm, calling for help and maintaining a safe escape route come first. Only attempt a small developing fire when trained, authorized and equipped for that fire, with a clear exit behind you. If any condition is uncertain, evacuate.",
+          "steps": [
+            "For an extinguisher that uses the PASS method, remember Pull the pin, Aim at the base, Squeeze the handle and Sweep across the base.",
+            "Follow the actual unit label and training for its effective distance and operation. Do not hold the discharge horn of a CO2 extinguisher; it can become dangerously cold.",
+            "Withdraw if smoke, heat or the fire threatens your escape route, if the fire grows, or if the extinguisher is exhausted. Follow BHV instructions and do not re-enter without clearance."
+          ],
+          "after": "This is recognition and awareness, not hands-on firefighting qualification. The technician must confirm the types available and demonstrate the local emergency arrangements. OSHA is used as a technique reference, not as Dutch regulatory guidance.",
+          "sourceUrl": "https://www.osha.gov/etools/evacuation-plans-procedures/emergency-standards/portable-extinguishers/use",
+          "sourceLabel": "Extinguisher technique and limits: OSHA training reference."
         }
       ],
-      "local": "Verify emergency contacts, exposure instructions, evacuation route, meeting point and spill-response responsibilities.",
       "practice": {
         "id": "q8",
         "module": 7,
@@ -399,7 +439,7 @@ window.COURSE = {
         "explanation": "An unknown spill needs trained assessment, not improvised cleanup.",
         "critical": true
       },
-      "reference": "5 (pp. 58–69)",
+      "reference": "5 (pp. 58â€“69)",
       "figure": "emergency.svg",
       "figureAlt": "Warn others, move away from danger and call for help"
     }
@@ -409,7 +449,7 @@ window.COURSE = {
       "id": "q1",
       "sourceQuestion": 1,
       "module": 7,
-      "prompt": "A hazardous spill produces fumes and you are not trained to respond. What should you do?",
+      "prompt": "An unknown or hazardous spill may expose people, and you are not trained to respond. What should you do?",
       "options": [
         "Isolate nearby equipment, then clean with the available spill kit.",
         "Warn others, withdraw safely and call for emergency assistance.",
@@ -417,7 +457,7 @@ window.COURSE = {
         "Check the SDS at the bench, then decide whether to evacuate."
       ],
       "answer": 1,
-      "explanation": "Withdraw from danger, warn others and follow local alarm and reporting procedures. Cleanup requires appropriate training.",
+      "explanation": "Warn others, avoid exposure, withdraw safely and summon trained assistance through the emergency arrangements. Unknown substances or hazardous fumes must not be cleaned up by an untrained user.",
       "critical": true
     },
     {
@@ -516,10 +556,10 @@ window.COURSE = {
       "module": 7,
       "prompt": "What campus emergency number does the University of Twente publish?",
       "options": [
-        "053 489 2222 — campus emergency response",
-        "053 489 2134 — campus emergency response",
-        "112 — internal UT campus emergency number",
-        "0900 8844 — campus emergency response"
+        "053 489 2222 â€” campus emergency response",
+        "053 489 2134 â€” campus emergency response",
+        "112 â€” internal UT campus emergency number",
+        "0900 8844 â€” campus emergency response"
       ],
       "answer": 0,
       "explanation": "UT publishes 053 489 2222 as its campus emergency number (2222 internally). The national Dutch emergency number is 112. These are different services; follow campus emergency instructions and know both numbers.",
@@ -537,22 +577,21 @@ window.COURSE = {
         "The room is ventilated and compatible gloves are available for spills."
       ],
       "answer": 0,
-      "explanation": "A required engineering control must function. Odour and additional PPE cannot substitute for it.",
+      "explanation": "A functioning chemical fume hood captures hazardous airborne releases before they enter the room. Check its indicator, use the required sash position and follow the operating instructions. Gloves or lack of odor do not replace required ventilation.",
       "critical": true
     },
     {
       "id": "q10",
-      "sourceQuestion": 10,
-      "module": 7,
-      "prompt": "You find a chemical spill but do not know the substance or whether you are trained to clean it. What should you do first?",
+      "module": 4,
+      "prompt": "You have removed one disposable glove and hold it in your other gloved hand. How should you remove the second glove?",
       "options": [
-        "Select absorbent from the spill kit after checking the liquid's color.",
-        "Warn others, avoid contact and arrange assessment by trained staff.",
-        "Dilute the spill slowly while asking a colleague to identify the liquid.",
-        "Cover the spill and continue nearby until the technician can attend."
+        "Pinch its outer wrist surface with bare fingers and peel it slowly over your hand.",
+        "Slide bare fingers under its inside cuff and peel it over the first glove.",
+        "Pull at its fingertips with the bare hand and keep both gloves upright.",
+        "Wipe its outer wrist surface, then pinch it with bare fingers to remove."
       ],
       "answer": 1,
-      "explanation": "A spill kit is not blanket authorization to clean up. Identify the hazard and the authorized response from safety.",
+      "explanation": "Bare fingers contact the inside cuff, not the contaminated outside. Peel the second glove inside out around the first, discard both in the correct chemical waste stream and wash hands. Do not reuse disposable gloves.",
       "critical": true
     },
     {
@@ -587,17 +626,16 @@ window.COURSE = {
     },
     {
       "id": "q13",
-      "sourceQuestion": 13,
-      "module": 4,
-      "prompt": "What is the main protective purpose of a functioning chemical fume hood?",
+      "module": 1,
+      "prompt": "You will use a new chemical product in an approved task. What should you check before selecting protection?",
       "options": [
-        "Keep chemicals cool enough to limit their evaporation during storage.",
-        "Prevent splashes from reaching the user during any chemical transfer.",
-        "Capture hazardous airborne releases before they enter the room.",
-        "Remove every chemical hazard when the sash is at its marked height."
+        "The SDS for a similar chemical product and gloves normally stocked at the bench.",
+        "The container pictograms and the protection available from the cupboard.",
+        "The actual product SDS and task assessment, including glove compatibility.",
+        "The product hazard name and the thickest glove material kept in stock."
       ],
       "answer": 2,
-      "explanation": "A hood is an engineering control for airborne exposure, used with the other prescribed measures.",
+      "explanation": "Use the SDS for the actual substance or mixture, together with the task assessment and approved glove-selection guidance. A pictogram or glove thickness alone cannot establish suitable protection.",
       "critical": false
     },
     {
@@ -708,32 +746,6 @@ window.COURSE = {
   ],
   "source": "https://www.acs.org/content/dam/acsorg/about/governance/committees/chemicalsafety/publications/safety-in-academic-chemistry-laboratories-students.pdf",
   "examMinutes": 15,
-  "supplement": [
-    {
-      "title": "Cryogenic liquids",
-      "text": "Cryogens can cause cold injury, and released gas can displace oxygen. Appropriate ventilation, protective equipment and containers must be specified by the task procedure. Never assume an evaporating spill is harmless or enter an area suspected of oxygen deficiency."
-    },
-    {
-      "title": "Deposition equipment",
-      "text": "Thin-film systems can involve vacuum, pressure, heat, electricity and process gases. Only trained authorized users may operate or maintain them. Follow the equipment procedure, interlocks and approved isolation arrangements; never improvise maintenance on an energized system."
-    },
-    {
-      "title": "Excimer lasers",
-      "text": "Laser beam and reflected exposure can injure eyes and skin; excimer systems can also involve UV, high voltage and hazardous gases. Use the existing laser safety course and setup-specific training. Eyewear must match the actual laser and is one part of the control system."
-    },
-    {
-      "title": "Dust, nanomaterials and used abrasives",
-      "text": "Sanding or grinding can generate hazardous dust. Some nanomaterial forms can become airborne. Risk depends on the material, its form and the process; not every thin film is an airborne hazard. Follow the containment and waste instructions. Used abrasives may retain hazardous material."
-    },
-    {
-      "title": "Grinding and face protection",
-      "text": "Grinding can create flying fragments and dust. Follow the task assessment for impact-rated eye protection, guarding, extraction and supplementary face protection. A face shield supplements the required eye protection."
-    },
-    {
-      "title": "Local sign-off",
-      "text": "These topics are an awareness introduction. Your technician must identify which equipment, materials and additional courses apply, then provide practical training. This supplement is outside the core chemical-lab exam."
-    }
-  ],
   "references": [
     {
       "title": "Free ACS third-edition textbook access",
@@ -782,6 +794,14 @@ window.COURSE = {
     {
       "title": "NIH PubChem GHS pictogram image service",
       "url": "https://pubchem.ncbi.nlm.nih.gov/pcfe/docs/markdown/imaging-services.md"
+    },
+    {
+      "title": "CDC: glove-removal hand technique (adapted for chemical glove disposal)",
+      "url": "https://www.cdc.gov/ebola/hcp/communication-resources/how-to-remove-gloves-safely.html"
+    },
+    {
+      "title": "OSHA: extinguisher awareness and technique (not Dutch regulatory guidance)",
+      "url": "https://www.osha.gov/etools/evacuation-plans-procedures/emergency-standards/portable-extinguishers/use"
     }
   ]
 };
