@@ -1,4 +1,5 @@
 let posts = [
+    { title: 'Modular onboarding booklet', image: 'projects/modular-booklet-showcase/thumb.png', category: 'python', link: 'projects/modular-booklet-showcase/modular-booklet-showcase.html', date: 'October 2026' },
     { title: 'Palette Engine: better colors for scientific plots', image: 'projects/palette-engine/thumb.png', category: 'python', link: 'projects/palette-engine/palette-engine.html', date: 'August 2026' },
     { title: 'Revisiting an old project: KMCS in Python', image: 'projects/kmcs/thumb.png', category: 'python', link: 'projects/kmcs/kmcs.html', date: 'August 2026' },
 ];
