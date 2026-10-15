@@ -1,5 +1,5 @@
 window.COURSE = {
-  "version": "0.6-review",
+  "version": "0.7-review",
   "title": "Chemical Laboratory Safety Foundations",
   "passPercent": 80,
   "modules": [
@@ -158,6 +158,14 @@ window.COURSE = {
           "title": "Cryogenic liquids: cold injury and oxygen displacement",
           "text": "Liquid nitrogen and liquid helium can injure skin and eyes through extreme cold, and skin can stick to cold surfaces. Their evaporation produces large volumes of gas that can displace oxygen, even though the gases are nonflammable and chemically inert. A person can become incapacitated without a useful warning smell. Adequate ventilation and the required oxygen monitoring must be established by the assessment. Never enter an oxygen-deficient area to rescue someone; withdraw, warn others and summon trained emergency responders.",
           "imsChapter": "5"
+        },
+        {
+          "title": "Airborne nanomaterials depend on the material and task",
+          "imsChapter": "2–3; broader technician test",
+          "text": "A nanomaterial is not automatically airborne just because it is small. Dry powders, loose particles and dust released by scraping, sanding or grinding can create an inhalation exposure; particles bound in an intact coating or solid usually have a different release potential. A suspension can also generate exposure if a process creates droplets or aerosols. Consider the material, its physical form and the actual operation, including cleaning and waste handling. Do not use visible dust, smell or the absence of symptoms to judge safety.",
+          "after": "Use the approved enclosure or local extraction and handling method established by the risk assessment. Do not open-handle unfamiliar powders, dry-brush deposits or blow residues away with compressed gas. Contaminated wipes and used abrasives can retain hazardous material and need the specified waste route. Wet methods or substitutions require approval for chemical compatibility and the task; they are not a universal solution. Respiratory protection, when required, needs separate selection and training.",
+          "sourceUrl": "https://www.cdc.gov/niosh/docs/2012-147/",
+          "sourceLabel": "NIOSH: safe laboratory practices for engineered nanomaterials (technical reference). "
         }
       ],
       "practice": {
@@ -286,6 +294,14 @@ window.COURSE = {
           "text": "A chemical fume hood is selected to capture hazardous airborne releases. A clean bench may primarily protect a sample from particles and may direct air toward the user. Do not handle hazardous chemicals in a clean bench merely because it looks similar or has airflow. The IMS hood guidance places work at least 15 cm back from the opening; have the technician show this working zone, the sash mark and the indicator on your hood. Keep your head outside and do not obstruct airflow.",
           "imsChapter": "2",
           "scope": "ut"
+        },
+        {
+          "title": "Eye and face protection for grinding",
+          "imsChapter": "2–3; broader technician test",
+          "text": "Grinding, sanding and abrasive cutting can eject particles or fragments toward the eyes and face. Select impact-rated eye protection appropriate to the task, including the required side protection or goggles. Ordinary prescription glasses and chemical splash protection without a suitable impact rating are not substitutes. When the assessment, equipment instructions or local procedure identifies a face-impact or splash risk, wear a suitable supplementary face shield over the required eye protection; a face shield alone is not sufficient.",
+          "after": "Protection does not replace guards, the designated enclosure, dust extraction or training. Confirm the approved tools, material, eye/face protection and containment before starting. A glovebox or an enclosure must be assessed for the actual grinding operation rather than assumed to make every task safe.",
+          "sourceUrl": "https://www.osha.gov/training/library/personal-protective-equipment/assessment",
+          "sourceLabel": "OSHA eye/face PPE assessment: technical reference, not Dutch regulatory guidance."
         }
       ],
       "practice": {
@@ -943,6 +959,14 @@ window.COURSE = {
     {
       "title": "TNW HSE procedures and support (UT login required)",
       "url": "https://www.utwente.nl/en/tnw/intranet/services-and-support/hse/arbo-milieu/"
+    },
+    {
+      "title": "NIOSH: engineered nanomaterials in research laboratories",
+      "url": "https://www.cdc.gov/niosh/docs/2012-147/"
+    },
+    {
+      "title": "OSHA: eye and face protection assessment (technical reference)",
+      "url": "https://www.osha.gov/training/library/personal-protective-equipment/assessment"
     }
   ]
 };
