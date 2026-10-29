@@ -1,5 +1,5 @@
 window.COURSE = {
-  "version": "0.8-review",
+  "version": "0.9",
   "title": "IMS Chemical Laboratory Safety and Good Practice",
   "passPercent": 80,
   "modules": [
@@ -9,11 +9,18 @@ window.COURSE = {
       "sections": [
         {
           "title": "A shared starting point",
-          "text": "The IMS Safety and Lab Usage Protocol is the main source for general and chemical-laboratory practice in this course. Everyone must understand the rules, complete the local introduction and responsibility record, and obtain equipment and task authorization. Previous qualifications do not establish training for the actual work. ACS guidance provides supporting safety principles and good laboratory practice."
+          "text": "Everyone entering a chemical laboratory needs to understand its safety rules and good working practices. Complete the local safety introduction and responsibility record, and obtain training and authorization for your equipment and tasks. Previous qualifications do not replace preparation for the actual work."
         },
         {
           "title": "RAMP before you start",
-          "text": "Recognize what could cause harm. Assess how harm could occur in this task. Minimize the risk with suitable controls. Prepare for a failure or emergency. Repeat this check when the procedure, quantities, equipment or conditions change."
+          "text": "Use RAMP to plan your work:",
+          "steps": [
+            "Recognize the hazards: identify what could cause harm.",
+            "Assess the risks: consider how harm could occur during this task.",
+            "Minimize the risks: choose suitable controls.",
+            "Prepare for emergencies: know what to do if something goes wrong."
+          ],
+          "after": "Repeat this check when the procedure, quantities, equipment or conditions change."
         },
         {
           "title": "Speak up and pause",
@@ -40,18 +47,18 @@ window.COURSE = {
         },
         {
           "title": "Working outside normal hours",
-          "text": "S&T/HSE requirements govern work outside office hours in every laboratory. IMS normal laboratory hours are 08:00–18:00 on working days; evenings, nights, weekends and official holidays require the outside-hours arrangements. Before laboratory work, obtain supervisor approval based on a risk assessment, arrange a trained and authorized buddy, notify HSE through the required email route with both people’s names, roles and planned schedule, and register the work using the HSE form. These requirements apply together; registration alone is not permission.",
+          "text": "Outside-hours requirements apply to every laboratory. Normal laboratory hours are 08:00–18:00 on working days. Work in the laboratory during evenings, nights, weekends or official holidays requires all of the following:",
           "imsChapter": "1",
           "scope": "ut",
           "sourceUrl": "https://www.utwente.nl/en/tnw/intranet/services-and-support/hse/arbo-milieu/booking-laboratory-work-outside-normal-working-hours/",
           "sourceLabel": "Register laboratory work outside normal working hours (UT login required).",
-          "after": "Current S&T/HSE requirements take precedence over older manual rules. Office work outside the laboratory is allowed; that does not authorize a laboratory task. Acetone, ethanol and IPA are not exceptions: their use also requires approval and all outside-hours arrangements."
-        },
-        {
-          "title": "Outside-hours task and buddy restrictions",
-          "text": "The buddy must meet the current HSE requirements and be trained and authorized for the work. Friends, family and untrained visitors do not count; the IMS protocol also excludes bachelor’s/master’s students as the required second person. Outside-hours repairs and maintenance are prohibited. The IMS restrictions also prohibit outside-hours experiments with strong acids or bases and use of H310/H330 chemicals. Follow current S&T/HSE requirements if they supersede an older rule. Resolve permitted tasks and buddy eligibility before starting; a familiar solvent or building access does not establish permission.",
-          "imsChapter": "1 and current S&T/HSE requirements",
-          "scope": "ut"
+          "after": "Current S&T/HSE requirements take precedence over older manual rules. Office work outside the laboratory is allowed. Acetone, ethanol and IPA are not exceptions to the laboratory requirements.",
+          "steps": [
+            "Obtain supervisor approval based on a risk assessment for the planned task.",
+            "Arrange a trained and authorized buddy. The buddy must meet current HSE eligibility requirements; friends, family, untrained visitors and bachelor’s/master’s students do not qualify as the required second person.",
+            "Notify HSE through the required email route, giving both people’s names, roles and planned schedule, and register the work using the HSE form. Registration alone is not permission.",
+            "Confirm that the task is permitted. Outside-hours repairs and maintenance, experiments with strong acids or bases, and use of H310/H330 chemicals are prohibited."
+          ]
         }
       ],
       "practice": {
@@ -70,7 +77,6 @@ window.COURSE = {
       "reference": "1 (pp. 10–13) and 2 (pp. 14–25)",
       "figure": "ramp.svg",
       "figureAlt": "RAMP cycle: recognize, assess, minimize and prepare",
-      "imagePlaceholder": "Insert image: A trained researcher wearing the required clothing and protection (ACS chapter 2, pp. 16–18).",
       "imsReference": "1.1 and Appendix H",
       "videos": [
         {
@@ -79,7 +85,10 @@ window.COURSE = {
           "duration": "1:58",
           "producer": "BioNetwork"
         }
-      ]
+      ],
+      "image": "researcher-ppe.jpg",
+      "imageAlt": "Illustration of a researcher wearing a fastened laboratory coat, splash goggles and gloves.",
+      "imageCaption": "Fasten your lab coat and wear the eye and hand protection required for the task. Generated teaching illustration."
     },
     {
       "title": "Labels and safety information",
@@ -88,13 +97,11 @@ window.COURSE = {
         {
           "title": "Read the complete label",
           "text": "Check the chemical identity, concentration, hazard statements and precautionary statements. Hazard pictograms flag types of danger; they do not describe every risk or provide a complete procedure. An unlabeled bottle is an unknown substance until an authorized person resolves its identity.",
-          "image": "ims-ghs-pictograms.png",
-          "imageAlt": "Nine GHS codes with the red-diamond pictogram, name and black symbol for each hazard.",
-          "imageCaption": "Hazard-pictogram figure from Appendix C of the supplied IMS protocol. Symbols flag hazard classes; the complete label and SDS determine precautions."
+          "pictograms": true
         },
         {
           "title": "Safety data sheets",
-          "text": "An SDS is a safety data sheet for a substance or mixture. Look up the product you actually have. Useful sections include hazards (2), first aid (4), firefighting (5), accidental release (6), handling and storage (7), exposure controls and PPE (8), and stability and reactivity (10). Ask for help with unfamiliar terms."
+          "text": "An SDS is a safety data sheet for a substance or mixture. Check the SDS for every chemical you use or plan to use, matching the actual product and concentration. Useful sections include hazards (2), first aid (4), firefighting (5), accidental release (6), handling and storage (7), exposure controls and PPE (8), and stability and reactivity (10). Ask for help with unfamiliar terms."
         },
         {
           "title": "Turn information into a plan",
@@ -102,17 +109,25 @@ window.COURSE = {
         },
         {
           "title": "Signal words and hazard categories",
-          "text": "Danger and Warning are signal words indicating different levels of hazard within the labeling system. A lower category number generally indicates a more severe hazard within a given hazard class; do not compare category numbers across different classes. Read hazard and precautionary statements as well as pictograms. Follow the local standard for labeling working solutions with identity and hazard information."
+          "text": "Danger and Warning are signal words indicating different levels of hazard within the labeling system. A lower category number generally indicates a more severe hazard within a given hazard class; do not compare category numbers across different classes. Read hazard and precautionary statements as well as pictograms. Follow the local standard for labeling working solutions with identity and hazard information.",
+          "after": "For example, within acute oral toxicity, Category 1 is more severe than Category 4: their hazard statements are “Fatal if swallowed” and “Harmful if swallowed,” respectively. This comparison applies within the same hazard class and exposure route."
         },
         {
           "title": "Make a working mixture identifiable",
           "text": "Before preparing a mixture, confirm the approved combination and a chemically compatible container. The label must allow another trained person to identify the contents: composition and concentration, the responsible user, preparation date, and the required hazard information. Include product identifiers such as CAS numbers where the local system requires them. Keep the original bottle label readable during pouring; liquid running across it can remove essential safety information. An experiment card identifies the setup but does not replace labels on individual containers.",
-          "imsChapter": "2"
+          "imsChapter": "2",
+          "image": "experiment-card.png",
+          "imageAlt": "An IMS experiment card with experiment information, name and phone, start and end times, chemicals used, and hazard checkboxes.",
+          "imageCaption": "Experiment card: record the experiment, name/phone, start and end date/time, chemicals used and applicable hazards. Keep individual chemical containers labeled as well."
         },
         {
           "title": "Hazard and precautionary statements",
-          "text": "Hazard (H) statements describe the nature and severity of a chemical’s hazards. Precautionary (P) statements describe prevention and response measures. GHS is implemented in the EU through CLP; H/P statements replaced the old R/S phrases. Read their full wording alongside the pictograms, not only their codes. The IMS example is hydrochloric acid, 37%: H290 concerns corrosion of metals, H314 severe skin burns and eye damage, and H335 respiratory irritation. Combined P statements describe responses such as eye flushing and medical contact. Use the actual product label and SDS; the example is not a handling or treatment procedure.",
-          "imsChapter": "Appendices B–C"
+          "text": "Hazard (H) statements describe the nature and severity of a chemical’s hazards. Precautionary (P) statements describe prevention and response measures. GHS is implemented in the EU through CLP; H/P statements replaced the old R/S phrases. Read their full wording alongside the pictograms, not only their codes.",
+          "imsChapter": "Appendices B–C",
+          "example": {
+            "title": "Example: hydrochloric acid, 37%",
+            "text": "H290: May be corrosive to metals. H314: Causes severe skin burns and eye damage. H335: May cause respiratory irritation. Precautionary (P) statements describe actions to prevent exposure and respond to it, such as eye flushing and obtaining medical help. Read the full statements on the actual supplier label and SDS."
+          }
         }
       ],
       "practice": {
@@ -131,7 +146,6 @@ window.COURSE = {
       "reference": "3 (pp. 40–44)",
       "figure": "sds.svg",
       "figureAlt": "Safety data sheet sections that support planning",
-      "imagePlaceholder": "Insert image: A readable product label beside the relevant SDS (ACS chapter 3).",
       "imsReference": "2.2 and Appendices B–C",
       "videos": [
         {
@@ -140,7 +154,10 @@ window.COURSE = {
           "duration": "3:54",
           "producer": "BioNetwork"
         }
-      ]
+      ],
+      "image": "label-sds-example.svg",
+      "imageAlt": "Training label for hydrochloric acid beside selected safety data sheet sections.",
+      "imageCaption": "Training example: connect the product label with the matching SDS. These extracts are not a complete supplier label or SDS."
     },
     {
       "title": "Health and physical hazards",
@@ -152,7 +169,7 @@ window.COURSE = {
         },
         {
           "title": "Common chemical hazards",
-          "text": "Corrosive substances can damage tissue. Flammable liquids may release vapors that ignite away from the container. Oxidizers can intensify combustion. Toxic and sensitizing substances need controls appropriate to their specific hazards. Read the actual product information rather than assuming all chemicals in a category behave alike."
+          "text": "Corrosive substances can damage tissue. Flammable solvents such as acetone, IPA and ethanol release vapors that can ignite away from the container, including at hot surfaces or electrical equipment. Oxidizers can intensify combustion and react violently with organic material. Chlorinated solvents can cause serious health effects and require their separate approved waste route. Toxic and sensitizing substances need controls appropriate to the actual product. Check its label and SDS rather than assuming every chemical in a family behaves alike."
         },
         {
           "title": "Reactivity and stored energy",
@@ -164,12 +181,12 @@ window.COURSE = {
         },
         {
           "title": "HF needs specific training",
-          "text": "Hydrofluoric acid (HF) can cause deep tissue injury and systemic toxicity by disrupting calcium and magnesium balance. Pain may be delayed; a minor-looking exposure must not be dismissed. HF work requires an approved specific procedure, trained supervision and an established emergency plan. Suspected exposure requires immediate emergency assistance and urgent medical evaluation. This course does not teach HF use or treatment. This includes buffered HF/BOE products. Read the dedicated HF emergency protocol before authorized work. HF attacks glass: only use the approved compatible labware and waste route in the chemical hood."
+          "text": "Hydrofluoric acid (HF) can cause deep tissue injury and systemic toxicity by disrupting calcium and magnesium balance. Pain may be delayed; a minor-looking exposure must not be dismissed. HF work requires an approved specific procedure, trained supervision and an established emergency plan. Suspected exposure requires immediate emergency assistance and urgent medical evaluation. The same precautions apply to buffered oxide etch (BOE), an HF-containing product. Obtain specific instruction in the approved HF procedure and emergency response before use. Read the dedicated HF emergency protocol before authorized work. HF attacks glass: only use the approved compatible labware and waste route in the chemical hood."
         },
         {
           "title": "Reactive cleaning mixtures",
           "text": "Aqua regia and piranha solutions are highly hazardous reactive mixtures. They may release heat and harmful gases, react dangerously with organic material and continue reacting in waste containers. Before planning any piranha work, always inform the person responsible for the laboratory and obtain the required approval, training and procedure. The lab needs to know before preparation or use.",
-          "after": "Contact the responsible technician for piranha and aqua regia disposal arrangements. Students must not improvise neutralization, dilution, venting or mixing into routine waste. These examples teach hazards and authorization, not preparation or disposal recipes."
+          "after": "Contact the responsible technician for piranha and aqua regia disposal arrangements. Students must not improvise neutralization, dilution, venting or mixing into routine waste."
         },
         {
           "title": "Peroxide formation is a different hazard",
@@ -180,18 +197,13 @@ window.COURSE = {
           "text": "Some substances can cause cancer, genetic damage or reproductive harm; others damage particular organs or cause allergic sensitization. Repeated exposure can matter even when each individual exposure seems small. A sensitized person may react to very low exposure. Assess the actual substance, route and exposure pattern, and seek occupational-health advice about individual concerns without relying on symptoms to judge safety."
         },
         {
-          "title": "Chemical families used in IMS work",
-          "text": "Flammable solvents such as acetone, IPA and ethanol can ignite from hot surfaces or electrical components. Chlorinated solvents can create serious health hazards and have a separate approved waste route. Oxidizing reagents and peroxide-containing cleaning mixtures can react violently with organic material. HF and reactive cleaning mixtures require their own approved procedures and emergency arrangements. Learn these distinctions before handling a bottle; familiar use in another group is not clearance to use it here.",
-          "imsChapter": "2"
-        },
-        {
           "title": "Cryogenic liquids: cold injury and oxygen displacement",
           "text": "Liquid nitrogen and liquid helium can injure skin and eyes through extreme cold, and skin can stick to cold surfaces. Their evaporation produces large volumes of gas that can displace oxygen, even though the gases are nonflammable and chemically inert. A person can become incapacitated without a useful warning smell. Adequate ventilation and the required oxygen monitoring must be established by the assessment. Never enter an oxygen-deficient area to rescue someone; withdraw, warn others and summon trained emergency responders.",
           "imsChapter": "5"
         },
         {
           "title": "Airborne nanomaterials depend on the material and task",
-          "imsChapter": "2–3; broader technician test",
+          "imsChapter": "2–3",
           "text": "A nanomaterial is not automatically airborne just because it is small. Dry powders, loose particles and dust released by scraping, sanding or grinding can create an inhalation exposure; particles bound in an intact coating or solid usually have a different release potential. A suspension can also generate exposure if a process creates droplets or aerosols. Consider the material, its physical form and the actual operation, including cleaning and waste handling. Do not use visible dust, smell or the absence of symptoms to judge safety.",
           "after": "Use the approved enclosure or local extraction and handling method established by the risk assessment. Do not open-handle unfamiliar powders, dry-brush deposits or blow residues away with compressed gas. Contaminated wipes and used abrasives can retain hazardous material and need the specified waste route. Wet methods or substitutions require approval for chemical compatibility and the task; they are not a universal solution. Respiratory protection, when required, needs separate selection and training.",
           "sourceUrl": "https://www.cdc.gov/niosh/docs/2012-147/",
@@ -199,7 +211,7 @@ window.COURSE = {
         },
         {
           "title": "Local chemical clearance and substitution",
-          "text": "Do not bring a new chemical, material or mixture into use without the lab-manager review and SDS. Consult local restrictions: avoid chemicals flagged for substitution where possible and obtain clearance for restricted materials. The IMS manual specifically asks users to avoid carbon tetrachloride where possible. Familiar solvent cleaning does not authorize other processes or unreviewed mixtures.",
+          "text": "Do not bring a new chemical, material or mixture into use without the lab-manager review and SDS. Consult local restrictions: avoid chemicals flagged for substitution where possible and obtain clearance for restricted materials. Avoid carbon tetrachloride where possible. Familiar solvent cleaning does not authorize other processes or unreviewed mixtures.",
           "imsChapter": "2.2"
         }
       ],
@@ -219,8 +231,7 @@ window.COURSE = {
       "reference": "3 (pp. 26–39)",
       "figure": "exposure.svg",
       "figureAlt": "Exposure routes: breathing, skin, mouth and puncture",
-      "imagePlaceholder": "Insert image: A photograph illustrating an exposure route or incompatible storage (ACS chapters 2–3).",
-      "imsReference": "2.6, with supporting ACS explanations",
+      "imsReference": "2.2, 2.6 and 5",
       "videos": []
     },
     {
@@ -344,7 +355,7 @@ window.COURSE = {
         },
         {
           "title": "Eye and face protection for grinding",
-          "imsChapter": "2–3; broader technician test",
+          "imsChapter": "2–3",
           "text": "Grinding, sanding and abrasive cutting can eject particles or fragments toward the eyes and face. Select impact-rated eye protection appropriate to the task, including the required side protection or goggles. Ordinary prescription glasses and chemical splash protection without a suitable impact rating are not substitutes. When the assessment, equipment instructions or local procedure identifies a face-impact or splash risk, wear a suitable supplementary face shield over the required eye protection; a face shield alone is not sufficient.",
           "after": "Protection does not replace guards, the designated enclosure, dust extraction or training. Confirm the approved tools, material, eye/face protection and containment before starting. A glovebox or an enclosure must be assessed for the actual grinding operation rather than assumed to make every task safe.",
           "sourceUrl": "https://www.osha.gov/training/library/personal-protective-equipment/assessment",
@@ -353,7 +364,7 @@ window.COURSE = {
         {
           "title": "Door handles are always a no-glove surface",
           "text": "Always remove gloves before touching a door handle, even if they appear clean or have only been used with water, ethanol or acetone. A touched bottle or surface may already be contaminated, so solvent use does not establish cleanliness. This consistent habit prevents transfer to shared surfaces. Follow the approved decontamination and removal method for reusable gloves before touching clean objects.",
-          "imsChapter": "2.1 and 2.4; clarified 29 October 2026"
+          "imsChapter": "2.1 and 2.4"
         }
       ],
       "practice": {
@@ -553,7 +564,7 @@ window.COURSE = {
         {
           "title": "At 90% full, inform the technician",
           "text": "When any chemical-waste container reaches 90% of its capacity, stop adding waste and inform the technician responsible for the laboratory. Do not use the remaining space. Follow a lower marked limit if one applies. Students notify the technician; they do not arrange collection themselves. The technician handles collection and specialized disposal. Confirm the identity and compatibility of an approved alternative container before using it.",
-          "imsChapter": "2.5; clarified 29 October 2026",
+          "imsChapter": "2.5",
           "scope": "ut"
         },
         {
@@ -988,10 +999,6 @@ window.COURSE = {
   "examMinutes": 15,
   "references": [
     {
-      "title": "Free ACS third-edition textbook access",
-      "url": "https://institute.acs.org/acs-center/lab-safety/education-training/college-univ-guidelines/laboratory-safety-for-chemistry-students-etextbook.html"
-    },
-    {
       "title": "ACS Safety in Academic Chemistry Laboratories, eighth edition",
       "url": "https://www.acs.org/content/dam/acsorg/about/governance/committees/chemicalsafety/publications/safety-in-academic-chemistry-laboratories-students.pdf"
     },
@@ -1032,10 +1039,6 @@ window.COURSE = {
       "url": "https://www.osha.gov/hazcom/pictograms"
     },
     {
-      "title": "NIH PubChem GHS pictogram image service",
-      "url": "https://pubchem.ncbi.nlm.nih.gov/pcfe/docs/markdown/imaging-services.md"
-    },
-    {
       "title": "CDC: glove-removal hand technique (adapted for chemical glove disposal)",
       "url": "https://www.cdc.gov/ebola/hcp/communication-resources/how-to-remove-gloves-safely.html"
     },
@@ -1062,6 +1065,14 @@ window.COURSE = {
     {
       "title": "OSHA: eye and face protection assessment (technical reference)",
       "url": "https://www.osha.gov/training/library/personal-protective-equipment/assessment"
+    },
+    {
+      "title": "OSHA: acute toxicity categories and label statements",
+      "url": "https://www.osha.gov/hazcom/appendix-c"
+    },
+    {
+      "title": "OSHA: buffered oxide etch terminology",
+      "url": "https://www.osha.gov/semiconductors/tables/table2"
     }
   ],
   "primaryManual": "IMS Safety and Lab Usage Protocol"
