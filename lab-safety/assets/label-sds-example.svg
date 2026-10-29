@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" role="img" aria-labelledby="title desc">
 <title id="title">Connect the chemical label with its safety data sheet</title><desc id="desc">Training extracts for hydrochloric acid 37 percent: product identity and hazard statements on the label match sections 1 and 2 of the SDS. Further SDS sections cover first aid, protection and reactivity.</desc>
 <rect width="1000" height="640" rx="16" fill="#edf3ed"/>
@@ -5,9 +6,9 @@
 <text x="38" y="50" font-size="28" font-weight="bold">Same product. Matching safety information.</text>
 <rect x="30" y="80" width="430" height="480" rx="10" fill="white" stroke="#b8ccc3"/>
 <rect x="510" y="80" width="460" height="480" rx="10" fill="white" stroke="#b8ccc3"/>
-<text x="55" y="120" font-size="18" fill="#006a60" font-weight="bold">LABEL EXTRACT Â· TRAINING EXAMPLE</text>
+<text x="55" y="120" font-size="18" fill="#006a60" font-weight="bold">LABEL EXTRACT  /  TRAINING EXAMPLE</text>
 <text x="55" y="165" font-size="27" font-weight="bold">Hydrochloric acid</text>
-<text x="55" y="198" font-size="24">37% Â· DANGER</text>
+<text x="55" y="198" font-size="24">37%  /  DANGER</text>
 <svg x="55" y="215" width="100" height="100" viewBox="0 0 100 100"><defs id="defs6" /><g
      transform="matrix(1.25,0,0,-1.25,0,70)"
      id="g10"><g
@@ -90,21 +91,21 @@
          d="m 1044.93,1742.23 c 0,-1.53 0.09,-3.07 0.17,-4.58 l -0.1,0 0.15,-1.01 c 0.28,-3.93 0.85,-7.8 1.71,-11.62 l 84.15,-567.99 c 2.94,-48.37 42.59,-86.67 91.1,-86.67 48.23,0 87.69,37.87 91,85.86 l 84.01,567.89 c 1.04,4.32 1.69,8.74 1.96,13.19 l 0.04,0.35 -0.04,0 c 0.1,1.51 0.19,3.05 0.19,4.58 0,64.41 -79.32,116.61 -177.16,116.61 -97.86,0 -177.18,-52.19 -177.18,-116.61"
          id="path18"
          style="fill:#100f0d;fill-opacity:1;fill-rule:nonzero;stroke:none" /></g></g></svg>
-<text x="55" y="350" font-size="19">H290 Â· May be corrosive to metals.</text>
-<text x="55" y="390" font-size="19">H314 Â· Causes severe skin burns</text>
+<text x="55" y="350" font-size="19">H290  /  May be corrosive to metals.</text>
+<text x="55" y="390" font-size="19">H314  /  Causes severe skin burns</text>
 <text x="55" y="418" font-size="19">and eye damage.</text>
-<text x="55" y="458" font-size="19">H335 Â· May cause respiratory irritation.</text>
+<text x="55" y="458" font-size="19">H335  /  May cause respiratory irritation.</text>
 <text x="55" y="520" font-size="18" fill="#52666b">Also read the full precautionary statements.</text>
-<text x="535" y="120" font-size="18" fill="#006a60" font-weight="bold">SAFETY DATA SHEET Â· SELECTED SECTIONS</text>
-<text x="535" y="170" font-size="22" font-weight="bold">1 Â· Product identification</text>
+<text x="535" y="120" font-size="18" fill="#006a60" font-weight="bold">SAFETY DATA SHEET  /  SELECTED SECTIONS</text>
+<text x="535" y="170" font-size="22" font-weight="bold">1  /  Product identification</text>
 <text x="535" y="202" font-size="20">Hydrochloric acid, 37%</text>
-<text x="535" y="254" font-size="22" font-weight="bold">2 Â· Hazard identification</text>
+<text x="535" y="254" font-size="22" font-weight="bold">2  /  Hazard identification</text>
 <text x="535" y="286" font-size="20">Signal word, pictograms, H and P statements</text>
-<text x="535" y="338" font-size="22" font-weight="bold">4 Â· First aid</text>
+<text x="535" y="338" font-size="22" font-weight="bold">4  /  First aid</text>
 <text x="535" y="370" font-size="20">Response for the actual exposure route</text>
-<text x="535" y="422" font-size="22" font-weight="bold">8 Â· Exposure controls and PPE</text>
+<text x="535" y="422" font-size="22" font-weight="bold">8  /  Exposure controls and PPE</text>
 <text x="535" y="454" font-size="20">Ventilation and compatible protection</text>
-<text x="535" y="506" font-size="22" font-weight="bold">10 Â· Stability and reactivity</text>
+<text x="535" y="506" font-size="22" font-weight="bold">10  /  Stability and reactivity</text>
 <text x="535" y="538" font-size="20">Incompatible materials and conditions</text>
 <text x="38" y="605" font-size="19" fill="#52666b">Use the actual supplier label and SDS. These are teaching extracts, not complete documents.</text>
 </g></svg>
