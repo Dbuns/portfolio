@@ -1,6 +1,6 @@
 window.COURSE = {
-  "version": "0.7-review",
-  "title": "Chemical Laboratory Safety Foundations",
+  "version": "0.8-review",
+  "title": "IMS Chemical Laboratory Safety and Good Practice",
   "passPercent": 80,
   "modules": [
     {
@@ -9,7 +9,7 @@ window.COURSE = {
       "sections": [
         {
           "title": "A shared starting point",
-          "text": "People enter laboratories with different experience. A degree or job title does not establish training for a particular procedure. Before starting, understand the approved method, its hazards, required controls, supervision and emergency arrangements."
+          "text": "The IMS Safety and Lab Usage Protocol is the main source for general and chemical-laboratory practice in this course. Everyone must understand the rules, complete the local introduction and responsibility record, and obtain equipment and task authorization. Previous qualifications do not establish training for the actual work. ACS guidance provides supporting safety principles and good laboratory practice."
         },
         {
           "title": "RAMP before you start",
@@ -22,7 +22,7 @@ window.COURSE = {
         },
         {
           "title": "Everyday behavior",
-          "text": "Keep food and drinks outside the laboratory. Never mouth-pipette or deliberately smell chemicals. Keep benches and exits clear. Remove contaminated gloves before touching phones, door handles or shared computers, and wash hands before leaving."
+          "text": "Keep food, drinks, smoking, chewing gum and cosmetics outside the laboratory. Never mouth-pipette or deliberately smell chemicals. Keep benches and exits clear. Always remove gloves before touching a door handle, even when you think they are clean. Use bare hands for phones, notebooks and shared computers, and wash hands after glove removal and before leaving."
         },
         {
           "title": "Jewelry and personal items",
@@ -40,12 +40,18 @@ window.COURSE = {
         },
         {
           "title": "Working outside normal hours",
-          "text": "Laboratory activities outside office hours must always be registered through the S&T Register lab work form. Follow the current HSE procedure and obtain the required task approval and risk assessment before starting. Registration records the activity; it does not by itself authorize an untrained person, an unapproved task or working alone. Building access, this course certificate or having a friend nearby does not establish permission. Confirm the permitted task, supervision or buddy arrangements and schedule with the supervisor or lab manager using the current procedure.",
+          "text": "S&T/HSE requirements govern work outside office hours in every laboratory. IMS normal laboratory hours are 08:00–18:00 on working days; evenings, nights, weekends and official holidays require the outside-hours arrangements. Before laboratory work, obtain supervisor approval based on a risk assessment, arrange a trained and authorized buddy, notify HSE through the required email route with both people’s names, roles and planned schedule, and register the work using the HSE form. These requirements apply together; registration alone is not permission.",
           "imsChapter": "1",
           "scope": "ut",
           "sourceUrl": "https://www.utwente.nl/en/tnw/intranet/services-and-support/hse/arbo-milieu/booking-laboratory-work-outside-normal-working-hours/",
           "sourceLabel": "Register laboratory work outside normal working hours (UT login required).",
-          "after": "S&T’s October 2026 notice makes registration mandatory. Use the current HSE page for procedures and forms; do not rely on older IMS exceptions or email-only arrangements."
+          "after": "Current S&T/HSE requirements take precedence over older manual rules. Office work outside the laboratory is allowed; that does not authorize a laboratory task. Acetone, ethanol and IPA are not exceptions: their use also requires approval and all outside-hours arrangements."
+        },
+        {
+          "title": "Outside-hours task and buddy restrictions",
+          "text": "The buddy must meet the current HSE requirements and be trained and authorized for the work. Friends, family and untrained visitors do not count; the IMS protocol also excludes bachelor’s/master’s students as the required second person. Outside-hours repairs and maintenance are prohibited. The IMS restrictions also prohibit outside-hours experiments with strong acids or bases and use of H310/H330 chemicals. Follow current S&T/HSE requirements if they supersede an older rule. Resolve permitted tasks and buddy eligibility before starting; a familiar solvent or building access does not establish permission.",
+          "imsChapter": "1 and current S&T/HSE requirements",
+          "scope": "ut"
         }
       ],
       "practice": {
@@ -64,7 +70,16 @@ window.COURSE = {
       "reference": "1 (pp. 10–13) and 2 (pp. 14–25)",
       "figure": "ramp.svg",
       "figureAlt": "RAMP cycle: recognize, assess, minimize and prepare",
-      "imagePlaceholder": "Insert image: A trained researcher wearing the required clothing and protection (ACS chapter 2, pp. 16–18)."
+      "imagePlaceholder": "Insert image: A trained researcher wearing the required clothing and protection (ACS chapter 2, pp. 16–18).",
+      "imsReference": "1.1 and Appendix H",
+      "videos": [
+        {
+          "title": "Behavior",
+          "url": "https://www.youtube.com/watch?v=e7VkIuiT1kU",
+          "duration": "1:58",
+          "producer": "BioNetwork"
+        }
+      ]
     },
     {
       "title": "Labels and safety information",
@@ -93,6 +108,11 @@ window.COURSE = {
           "title": "Make a working mixture identifiable",
           "text": "Before preparing a mixture, confirm the approved combination and a chemically compatible container. The label must allow another trained person to identify the contents: composition and concentration, the responsible user, preparation date, and the required hazard information. Include product identifiers such as CAS numbers where the local system requires them. Keep the original bottle label readable during pouring; liquid running across it can remove essential safety information. An experiment card identifies the setup but does not replace labels on individual containers.",
           "imsChapter": "2"
+        },
+        {
+          "title": "Hazard and precautionary statements",
+          "text": "Hazard (H) statements describe the nature and severity of a chemical’s hazards. Precautionary (P) statements describe prevention and response measures. GHS is implemented in the EU through CLP; H/P statements replaced the old R/S phrases. Read their full wording alongside the pictograms, not only their codes. The IMS example is hydrochloric acid, 37%: H290 concerns corrosion of metals, H314 severe skin burns and eye damage, and H335 respiratory irritation. Combined P statements describe responses such as eye flushing and medical contact. Use the actual product label and SDS; the example is not a handling or treatment procedure.",
+          "imsChapter": "Appendices B–C"
         }
       ],
       "practice": {
@@ -111,7 +131,16 @@ window.COURSE = {
       "reference": "3 (pp. 40–44)",
       "figure": "sds.svg",
       "figureAlt": "Safety data sheet sections that support planning",
-      "imagePlaceholder": "Insert image: A readable product label beside the relevant SDS (ACS chapter 3)."
+      "imagePlaceholder": "Insert image: A readable product label beside the relevant SDS (ACS chapter 3).",
+      "imsReference": "2.2 and Appendices B–C",
+      "videos": [
+        {
+          "title": "Chemical Hazards",
+          "url": "https://www.youtube.com/watch?v=8queMM7VVfw",
+          "duration": "3:54",
+          "producer": "BioNetwork"
+        }
+      ]
     },
     {
       "title": "Health and physical hazards",
@@ -135,11 +164,12 @@ window.COURSE = {
         },
         {
           "title": "HF needs specific training",
-          "text": "Hydrofluoric acid (HF) can cause deep tissue injury and systemic toxicity by disrupting calcium and magnesium balance. Pain may be delayed; a minor-looking exposure must not be dismissed. HF work requires an approved specific procedure, trained supervision and an established emergency plan. Suspected exposure requires immediate emergency assistance and urgent medical evaluation. This course does not teach HF use or treatment."
+          "text": "Hydrofluoric acid (HF) can cause deep tissue injury and systemic toxicity by disrupting calcium and magnesium balance. Pain may be delayed; a minor-looking exposure must not be dismissed. HF work requires an approved specific procedure, trained supervision and an established emergency plan. Suspected exposure requires immediate emergency assistance and urgent medical evaluation. This course does not teach HF use or treatment. This includes buffered HF/BOE products. Read the dedicated HF emergency protocol before authorized work. HF attacks glass: only use the approved compatible labware and waste route in the chemical hood."
         },
         {
           "title": "Reactive cleaning mixtures",
-          "text": "Aqua regia is strongly corrosive, can release harmful gases and can react violently with organic material. It needs a specific approved procedure and waste route. Peroxide-containing oxidising cleaning mixtures, such as piranha solution, can react dangerously with organic solvents. Never combine them with solvent waste. These examples teach hazard recognition, not preparation recipes."
+          "text": "Aqua regia and piranha solutions are highly hazardous reactive mixtures. They may release heat and harmful gases, react dangerously with organic material and continue reacting in waste containers. Before planning any piranha work, always inform the person responsible for the laboratory and obtain the required approval, training and procedure. The lab needs to know before preparation or use.",
+          "after": "Contact the responsible technician for piranha and aqua regia disposal arrangements. Students must not improvise neutralization, dilution, venting or mixing into routine waste. These examples teach hazards and authorization, not preparation or disposal recipes."
         },
         {
           "title": "Peroxide formation is a different hazard",
@@ -166,6 +196,11 @@ window.COURSE = {
           "after": "Use the approved enclosure or local extraction and handling method established by the risk assessment. Do not open-handle unfamiliar powders, dry-brush deposits or blow residues away with compressed gas. Contaminated wipes and used abrasives can retain hazardous material and need the specified waste route. Wet methods or substitutions require approval for chemical compatibility and the task; they are not a universal solution. Respiratory protection, when required, needs separate selection and training.",
           "sourceUrl": "https://www.cdc.gov/niosh/docs/2012-147/",
           "sourceLabel": "NIOSH: safe laboratory practices for engineered nanomaterials (technical reference). "
+        },
+        {
+          "title": "Local chemical clearance and substitution",
+          "text": "Do not bring a new chemical, material or mixture into use without the lab-manager review and SDS. Consult local restrictions: avoid chemicals flagged for substitution where possible and obtain clearance for restricted materials. The IMS manual specifically asks users to avoid carbon tetrachloride where possible. Familiar solvent cleaning does not authorize other processes or unreviewed mixtures.",
+          "imsChapter": "2.2"
         }
       ],
       "practice": {
@@ -184,7 +219,9 @@ window.COURSE = {
       "reference": "3 (pp. 26–39)",
       "figure": "exposure.svg",
       "figureAlt": "Exposure routes: breathing, skin, mouth and puncture",
-      "imagePlaceholder": "Insert image: A photograph illustrating an exposure route or incompatible storage (ACS chapters 2–3)."
+      "imagePlaceholder": "Insert image: A photograph illustrating an exposure route or incompatible storage (ACS chapters 2–3).",
+      "imsReference": "2.6, with supporting ACS explanations",
+      "videos": []
     },
     {
       "title": "Assess the task before starting",
@@ -209,7 +246,7 @@ window.COURSE = {
         {
           "title": "Before a new chemical arrives",
           "text": "Obtain the required approval before ordering or bringing chemicals into the laboratory, including material from another group. Check the SDS, intended quantities, suitable storage, handling controls and waste route in advance. Make sure the responsible person can register and manage the material; an available supplier or bottle does not establish that it is approved for use.",
-          "imsChapter": "2 / Appendix F"
+          "imsChapter": "2.2"
         },
         {
           "title": "Additional S&T requirements for hazardous substances",
@@ -236,7 +273,16 @@ window.COURSE = {
       "reference": "1 (pp. 10–13) and 4 (pp. 46–48)",
       "figure": "risk.svg",
       "figureAlt": "Risk depends on task conditions and controls",
-      "imagePlaceholder": "Insert image: An actual setup with its risk assessment and controls identified (ACS chapters 1 and 4)."
+      "imagePlaceholder": "Insert image: An actual setup with its risk assessment and controls identified (ACS chapters 1 and 4).",
+      "imsReference": "1.1 and 2.2; current S&T/HSE requirements",
+      "videos": [
+        {
+          "title": "Experimenting with Danger",
+          "url": "https://www.youtube.com/watch?v=ALBWxGik64A",
+          "duration": "First 15 minutes: 0:00–15:00",
+          "producer": "US Chemical Safety Board"
+        }
+      ]
     },
     {
       "title": "Protection and fume hoods",
@@ -248,11 +294,11 @@ window.COURSE = {
         },
         {
           "title": "Dress and protect appropriately",
-          "text": "Wear the required eye protection and suitable laboratory clothing and footwear. Secure long hair and loose items. Chemical splash risks generally call for splash goggles; select protection according to the assessment. A face shield supplements required eye protection rather than replacing it."
+          "text": "Wear required laboratory eye protection at all times in IMS chemical laboratories. Use the required side protection, and chemical splash goggles for splash hazards. Prescription glasses require suitable protective overglasses or prescription safety protection. A face shield supplements eye protection. Wear covered legs, closed suitable footwear and required laboratory clothing; shorts, open footwear and high heels are not permitted. Secure long hair and loose items."
         },
         {
           "title": "Gloves are chemical-specific",
-          "text": "No glove protects against every chemical. Check compatibility, thickness and expected contact time using approved selection guidance. Inspect gloves and replace them when damaged or contaminated. Avoid transferring contamination to clean surfaces. Thin disposable nitrile gloves are not suitable for every solvent or prolonged contact. Consult the manufacturer’s compatibility and breakthrough guidance for the actual chemicals and glove model. Reusable or multilayer gloves require their own inspection, removal and decontamination procedure; a visibly clean glove is not proof of chemical protection.",
+          "text": "No glove protects against every chemical. Check the actual glove model, material, thickness and expected contact time using approved compatibility guidance. Nitrile gloves may be different colors; their color does not establish protection. Thin nitrile is not sufficient for every chemical or prolonged solvent contact. Inspect gloves and replace them when damaged or contaminated. Clean appearance and absence of smell do not establish safety.",
           "imsChapter": "2"
         },
         {
@@ -286,8 +332,9 @@ window.COURSE = {
         },
         {
           "title": "Chemical protection and glove layers",
-          "text": "The IMS protocol specifies extra protective layers for certain hazardous wet-chemical tasks. Learn the actual approved glove model, apron/coat combination and eye protection with the technician; glove color alone does not establish compatibility. Reusable gloves need an approved inspection, cleaning and removal procedure, while disposable gloves have the removal sequence above. Some glove materials contain natural rubber latex: tell the responsible person about an allergy so suitable alternatives can be selected. Respiratory protection requires a separate approved program and training; do not select a mask as an improvised substitute for ventilation.",
-          "imsChapter": "2"
+          "text": "In our IMS laboratories, for the chemicals and tasks approved here, the local wet-chemical rule is the designated orange/yellow tri-polymer gloves over nitrile gloves, with the required apron, laboratory overcoat and eye protection. This is a local requirement, not a claim that a glove color protects against every chemical. Confirm the approved glove model and compatibility. Tri-polymer gloves may contain natural rubber latex: arrange an approved alternative with the responsible person if you have an allergy.",
+          "imsChapter": "2",
+          "after": "Before use, follow the technician’s demonstrated inspection: use the designated nitrogen-gun setup to gently inflate the reusable glove like a balloon and check for holes or leaks. Do not improvise a high-pressure test or settings. Mark the gloves with your name and date. Replacement every two weeks is recommended; replace earlier for damage, contamination or a task-specific limit. Follow the approved cleaning and removal method for reusable gloves; the disposable-glove sequence is a separate method."
         },
         {
           "title": "A clean bench is not necessarily a chemical fume hood",
@@ -302,6 +349,11 @@ window.COURSE = {
           "after": "Protection does not replace guards, the designated enclosure, dust extraction or training. Confirm the approved tools, material, eye/face protection and containment before starting. A glovebox or an enclosure must be assessed for the actual grinding operation rather than assumed to make every task safe.",
           "sourceUrl": "https://www.osha.gov/training/library/personal-protective-equipment/assessment",
           "sourceLabel": "OSHA eye/face PPE assessment: technical reference, not Dutch regulatory guidance."
+        },
+        {
+          "title": "Door handles are always a no-glove surface",
+          "text": "Always remove gloves before touching a door handle, even if they appear clean or have only been used with water, ethanol or acetone. A touched bottle or surface may already be contaminated, so solvent use does not establish cleanliness. This consistent habit prevents transfer to shared surfaces. Follow the approved decontamination and removal method for reusable gloves before touching clean objects.",
+          "imsChapter": "2.1 and 2.4; clarified 29 October 2026"
         }
       ],
       "practice": {
@@ -320,7 +372,16 @@ window.COURSE = {
       "reference": "2 (pp. 16–18) and 4 (pp. 47, 50)",
       "figure": "controls.svg",
       "figureAlt": "Controls from eliminating the hazard to personal protection",
-      "imagePlaceholder": "Insert image: Correct fume-hood working zone, sash position and airflow indicator (ACS chapter 4, p. 50)."
+      "imagePlaceholder": "Insert image: Correct fume-hood working zone, sash position and airflow indicator (ACS chapter 4, p. 50).",
+      "imsReference": "2.1 and 2.4",
+      "videos": [
+        {
+          "title": "Proper Dress and PPE",
+          "url": "https://www.youtube.com/watch?v=GjAD83B4JaY",
+          "duration": "3:08",
+          "producer": "BioNetwork"
+        }
+      ]
     },
     {
       "title": "Safe laboratory work",
@@ -364,7 +425,7 @@ window.COURSE = {
         },
         {
           "title": "Chemicals through doors",
-          "text": "Carry closed, labeled containers in suitable secondary containment or an approved carrier. Plan the route and keep a clean method of opening doors. Never touch shared handles with potentially contaminated gloves. The local procedure may prescribe one clean hand or assistance; do not compromise a secure grip or protection to follow a slogan."
+          "text": "Carry one hazardous material per hand-carried trip, in a closed, labeled compatible container with suitable secondary containment. Plan a secure grip and route before lifting it. Always remove the glove from the hand that will touch a door handle; an apparently clean glove is not an exception. Arrange an approved carrier or trained assistance if needed so bare-hand door contact does not compromise containment, protection or grip."
         },
         {
           "title": "Flammable vapor near heat",
@@ -400,7 +461,7 @@ window.COURSE = {
         },
         {
           "title": "Shared labware and samples",
-          "text": "Keep glassware used for clean samples separate from ware used for dirty or contaminated work. Choose containers compatible with the chemicals and process; a clean-looking beaker may be unsuitable for a particular material. The user is responsible for the approved cleaning, collecting contaminated rinses and returning equipment to its designated area. Mark personal samples and labware with their identity and responsible user; store them only in assigned locations and remove them when the task is finished. Do not transfer a chemical preparation into a measurement room that lacks the controls required for it.",
+          "text": "Keep labware for clean substrates separate from ware for dirty samples or residues. In the IMS chemical area with separate cupboards, the wall cupboard is for clean substrates and the lower cupboard holds ware for dirty work; use and return the correct set. Do not use clean-substrate beakers for etching. The user must clean labware by the approved chemical-specific method, collect contaminated rinses and return it to its place. Label personal sets and store their boxes outside the chemical laboratory. Prepare hazardous samples only where the required controls are available.",
           "imsChapter": "2–3"
         },
         {
@@ -419,19 +480,9 @@ window.COURSE = {
           "imsChapter": "2"
         },
         {
-          "title": "Thin-film and characterization equipment: common boundaries",
-          "text": "These instruments may combine radiation, high voltage, vacuum or pressure, moving parts, gases and high temperatures. Do not bypass covers, shielding, interlocks or warning lights. Laser eyewear must match the actual wavelength and required protection; ordinary glasses, a familiar lens color or this chemical-safety course do not qualify someone for laser work. X-ray equipment needs its own instruction and radiation controls. Observe access restrictions, report suspected exposure immediately and leave maintenance to authorized staff.",
-          "imsChapter": "3"
-        },
-        {
-          "title": "Cleanrooms: cleanliness does not replace safety",
-          "text": "A cleanroom controls contamination of samples and processes; that does not make its chemicals or equipment harmless. Separate cleanroom access and equipment training are required. Follow its gowning, material-entry and contamination-control rules, and use only approved work areas and methods. In an emergency, evacuate immediately by the prescribed route rather than delaying to change out of cleanroom clothing. Detailed gowning, cleaning and room-specific processes belong in the local cleanroom training.",
-          "imsChapter": "4"
-        },
-        {
-          "title": "Handling cryogens requires practical instruction",
-          "text": "Use the approved vessel, transfer equipment, ventilation and protection for the task. Cryogenic liquid must not be trapped in a sealed container; evaporation can create dangerous pressure. Wear the required eye protection and face shield, covered clothing and suitable footwear. Loose-fitting cryogenic gloves provide limited splash/contact protection so they can be removed quickly; they do not permit immersing hands in liquid nitrogen or helium. Keep exposed skin away from cold surfaces and arrange a trained demonstration before transferring cryogens.",
-          "imsChapter": "5"
+          "title": "Pouring, rinsing and returning labware",
+          "text": "Keep the bottle label upward while pouring so drips do not obscure it. Rinse bottles and containers in the designated wet bench or fume hood using the approved method for the contents. Where the IMS labware procedure specifies it, thoroughly empty the vessel, rinse with DI water three times, collect contaminated rinses as waste and dry by the demonstrated method before returning it. Do not apply a water rinse to water-incompatible material. Never direct a gas gun toward skin or use it to disperse hazardous residues.",
+          "imsChapter": "2.2–2.3"
         }
       ],
       "practice": {
@@ -450,7 +501,22 @@ window.COURSE = {
       "reference": "4 (pp. 48–57)",
       "figure": "transport.svg",
       "figureAlt": "Closed container, secondary containment and clean door contact",
-      "imagePlaceholder": "Insert image: Safe glassware and chemical transport in secondary containment (ACS chapter 4, pp. 48–53)."
+      "imagePlaceholder": "Insert image: Safe glassware and chemical transport in secondary containment (ACS chapter 4, pp. 48–53).",
+      "imsReference": "2.2–2.3 and 2.7–2.9",
+      "videos": [
+        {
+          "title": "Safe Chemical Handling",
+          "url": "https://www.youtube.com/watch?v=uiB8qnlZTAM",
+          "duration": "3:44",
+          "producer": "BioNetwork"
+        },
+        {
+          "title": "Other General Hazards",
+          "url": "https://www.youtube.com/watch?v=q8UiamEWz4Q",
+          "duration": "2:38",
+          "producer": "BioNetwork"
+        }
+      ]
     },
     {
       "title": "Storage and chemical waste",
@@ -462,8 +528,9 @@ window.COURSE = {
         },
         {
           "title": "Plan waste before starting",
-          "text": "Identify the waste stream before generating it. Use designated compatible containers and required labels. Do not add material when the contents or compatibility are uncertain. Ask the technician. Follow the approved container closure and venting instructions for the actual waste; do not loosen caps or improvise venting to manage an unexpected reaction or pressure buildup. Stop and obtain help if the safe collection method is unclear.",
-          "imsChapter": "2 / Appendices E–F"
+          "text": "Identify the waste and its designated compatible container before work. Keep incompatible streams separate and use the required label. Close the container cap securely by hand; do not overtighten or force it. This means a closed, secure cap, not a loose, partly open or unclosed cap. Ask the responsible technician if the correct closure or collection container is uncertain.",
+          "imsChapter": "2.5 and Appendix E",
+          "after": "Reactive or gas-generating waste needs its dedicated technician-approved procedure; do not add it to an ordinary canister or loosen a cap to manage pressure. Unexpected heat, gas or pressure requires stopping work, warning others and obtaining help."
         },
         {
           "title": "Avoid hazardous mixtures",
@@ -480,8 +547,19 @@ window.COURSE = {
         },
         {
           "title": "From purchase to disposal",
-          "text": "Plan the full chemical lifecycle: approval and SDS before acquisition; registration and compatible storage when received; controlled use and clear labels during work; then a confirmed waste stream and collection route. Return stock chemicals to their designated storage after use rather than leaving them on a bench or in an arbitrary drawer. Tell the responsible person when stock is running low instead of ordering an unreviewed substitute. Confirm the container fill mark and collection trigger locally; stop filling before exceeding that mark.",
-          "imsChapter": "2 / Appendices D–F"
+          "text": "Check stock and suitability with the technician before ordering or bringing in material. Obtain the required SDS and process approval, label received chemicals and place them in assigned compatible storage. Return stock after use; do not leave solvents open or store chemicals in arbitrary drawers. Use designated secondary-containment bins for solvents outside the hood. Tell the responsible technician when supplies are low or finished. Follow the chemical-laboratory waste and packaging route. Cleanroom ordering and processing workflows are outside this course.",
+          "imsChapter": "2 and Appendix D"
+        },
+        {
+          "title": "At 90% full, inform the technician",
+          "text": "When any chemical-waste container reaches 90% of its capacity, stop adding waste and inform the technician responsible for the laboratory. Do not use the remaining space. Follow a lower marked limit if one applies. Students notify the technician; they do not arrange collection themselves. The technician handles collection and specialized disposal. Confirm the identity and compatibility of an approved alternative container before using it.",
+          "imsChapter": "2.5; clarified 29 October 2026",
+          "scope": "ut"
+        },
+        {
+          "title": "Recognize the local waste categories",
+          "text": "The IMS manual distinguishes acidic/neutral inorganic solutions, alkaline inorganic solutions, low-halogen organic waste, high-halogen organic waste, special waste and waste with extraordinary risks. These are local collection categories, not permission to mix materials with similar names. Contents, concentration, incompatibilities and the assigned label determine the route. Ask the technician if the classification is uncertain; do not use dilution to make incompatible waste appear acceptable.",
+          "imsChapter": "2.5 and Appendix E"
         }
       ],
       "practice": {
@@ -500,7 +578,9 @@ window.COURSE = {
       "reference": "2 (pp. 20–22) and 3 (pp. 37–39), with 4 (p. 53)",
       "figure": "waste.svg",
       "figureAlt": "Check waste identity and compatibility before choosing a stream",
-      "imagePlaceholder": "Insert image: Approved compatible storage and correctly labeled waste containers (ACS chapters 2–3)."
+      "imagePlaceholder": "Insert image: Approved compatible storage and correctly labeled waste containers (ACS chapters 2–3).",
+      "imsReference": "2.2, 2.5 and Appendices D–E",
+      "videos": []
     },
     {
       "title": "Prepare for emergencies",
@@ -512,7 +592,8 @@ window.COURSE = {
         },
         {
           "title": "Chemical exposure",
-          "text": "Alert others and obtain assistance promptly. For an eye or skin splash, begin the prescribed emergency flushing immediately and obtain medical advice; do not delay while searching for paperwork. Follow the local emergency procedure and chemical-specific guidance. Do not attempt chemical neutralization on the body."
+          "text": "For hazardous chemical exposure or suspected hazardous exposure, follow the immediate chemical-specific response and contact a doctor or the appropriate medical service. Start prescribed flushing for a corrosive eye/skin splash without waiting for pain or searching for paperwork. Follow the SDS and responder guidance. Suspected HF exposure needs immediate specialist emergency care even if it seems minor. Do not neutralize chemicals on the body.",
+          "after": "Not every contact with a known nonhazardous material requires a doctor. Use the material, exposure route and circumstances to assess it, not symptoms alone. If the substance or hazard is uncertain, promptly seek competent advice and take suspected hazardous exposure seriously; do not dismiss it because it does not hurt."
         },
         {
           "title": "Spills and fire",
@@ -552,8 +633,9 @@ window.COURSE = {
         },
         {
           "title": "A spill at the bench and a release beyond it",
-          "text": "Report spills immediately and warn people who could be exposed. Clean only a known, assessed small spill when you have the required training, procedure and materials. The IMS protocol directs users to warn staff when a release spreads beyond the working station; do not improvise cleanup in the room. Provide responders with the chemical identity and available SDS when safe. Protecting the victim never means exposing yourself to fumes, live electricity or another uncontrolled hazard.",
-          "imsChapter": "1–2"
+          "text": "For a chemical spill outside the workstation, including onto the floor, warn others, keep people clear, withdraw safely if needed and immediately notify the responsible laboratory staff. Do not clean it yourself or assume that a spill kit makes you authorized. For hazardous fumes, unknown material or an emergency, follow the alarm and emergency-help procedure.",
+          "imsChapter": "1–2",
+          "after": "Only clean a known, assessed small release inside the workstation when you have the required training, instructions and materials. Provide chemical identity and SDS information to responders when safe. Never enter a hazardous area to retrieve belongings or assist beyond your training."
         },
         {
           "title": "Current S&T incident and near-miss procedure",
@@ -586,7 +668,16 @@ window.COURSE = {
       "reference": "5 (pp. 58–69)",
       "figure": "emergency.svg",
       "figureAlt": "Warn others, move away from danger and call for help",
-      "imagePlaceholder": "Insert image: The actual eyewash, safety shower and alarm point (ACS chapter 5)."
+      "imagePlaceholder": "Insert image: The actual eyewash, safety shower and alarm point (ACS chapter 5).",
+      "imsReference": "1.2–1.3 and current S&T incident instructions",
+      "videos": [
+        {
+          "title": "Safety Equipment",
+          "url": "https://www.youtube.com/watch?v=IiHEYtnKfF0",
+          "duration": "3:49",
+          "producer": "BioNetwork"
+        }
+      ]
     }
   ],
   "questions": [
@@ -594,16 +685,20 @@ window.COURSE = {
       "id": "q1",
       "sourceQuestion": 1,
       "module": 7,
-      "prompt": "An unknown or hazardous spill may expose people, and you are not trained to respond. What should you do?",
+      "prompt": "A hazardous chemical spills onto the floor outside your workstation. You are not a trained spill responder. What should you do?",
       "options": [
-        "Isolate nearby equipment, then clean with the available spill kit.",
-        "Warn others, withdraw safely and call for emergency assistance.",
-        "Lower the hood sash, then stay nearby to monitor the fumes.",
-        "Check the SDS at the bench, then decide whether to evacuate."
+        "Use the available spill kit and start cleanup before the liquid spreads.",
+        "Warn others, keep clear and immediately notify the responsible lab staff.",
+        "Cover the spill with paper towels and report it after the area is dry.",
+        "Ask a nearby student to start cleaning while you identify the chemical."
       ],
       "answer": 1,
-      "explanation": "Warn others, avoid exposure, withdraw safely and summon trained assistance through the emergency arrangements. Unknown substances or hazardous fumes must not be cleaned up by an untrained user.",
-      "critical": true
+      "explanation": "Source questions 1 and 10 are combined. Students must not clean a spill outside the workstation. Warn others, avoid exposure and notify responsible staff immediately; use the alarm/emergency-help route when required.",
+      "critical": true,
+      "sourceQuestions": [
+        1,
+        10
+      ]
     },
     {
       "id": "q2",
@@ -677,7 +772,7 @@ window.COURSE = {
         "Find the SDS first, then choose the correct rinsing procedure."
       ],
       "answer": 2,
-      "explanation": "For this specified splash, act immediately under the emergency procedure and obtain medical guidance. Do not neutralise chemicals on the body.",
+      "explanation": "This is a hazardous corrosive splash: start emergency flushing immediately and obtain medical assistance. Do not wait for symptoms or neutralize chemicals on the body. The response depends on the substance and route; known nonhazardous contact does not automatically require a doctor.",
       "critical": true
     },
     {
@@ -692,7 +787,7 @@ window.COURSE = {
         "Check the bench and lights, then assume automated systems can continue."
       ],
       "answer": 1,
-      "explanation": "Shutdown and continuing operations must follow their specific instructions; do not disable safety controls or other experiments.",
+      "explanation": "Check the procedure-specific safe state, storage and handover. An authorized continuing experiment may need ventilation or cooling left on. Do not switch off safety controls or somebody else’s experiment merely because you are leaving.",
       "critical": false
     },
     {
@@ -864,13 +959,13 @@ window.COURSE = {
       "module": 5,
       "prompt": "When moving chemicals through doors, what should you ensure?",
       "options": [
-        "Use closed contained bottles, a secure grip and clean door contact.",
-        "Remove both gloves and carry the closed stock bottle by its neck.",
-        "Keep both gloves on and wipe the door handle after the transfer.",
-        "Carry the closed bottle against your coat to keep one hand free."
+        "Use contained bottles, a secure grip and a bare hand on door handles.",
+        "Keep apparently clean gloves on both hands when opening the doors.",
+        "Carry closed stock bottles by their neck so one hand can open doors.",
+        "Hold the bottle against your coat while using one gloved hand at doors."
       ],
       "answer": 0,
-      "explanation": "Avoid contaminating shared handles while retaining safe containment and grip. Use the approved local method.",
+      "explanation": "Always remove gloves before touching door handles, even when they appear clean. Retain containment and a secure grip; use an approved carrier or assistance when needed. Familiar solvent use does not establish that bottles or gloves are uncontaminated.",
       "critical": true
     },
     {
@@ -885,7 +980,7 @@ window.COURSE = {
         "Cooling stops its reactivity, so cooled residues use ordinary acid waste."
       ],
       "answer": 2,
-      "explanation": "The combined corrosive, gas and reactivity hazards require dedicated assessment, training and controls.",
+      "explanation": "Aqua regia combines corrosion, harmful gas and reactivity hazards. Obtain the required approval/training and contact the responsible technician for disposal. Always tell the person responsible for the lab before planned piranha work. Do not improvise neutralization or a waste recipe.",
       "critical": true
     }
   ],
@@ -968,5 +1063,6 @@ window.COURSE = {
       "title": "OSHA: eye and face protection assessment (technical reference)",
       "url": "https://www.osha.gov/training/library/personal-protective-equipment/assessment"
     }
-  ]
+  ],
+  "primaryManual": "IMS Safety and Lab Usage Protocol"
 };
