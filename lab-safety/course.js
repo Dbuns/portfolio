@@ -81,9 +81,9 @@ window.COURSE = {
           "producer": "BioNetwork"
         }
       ],
-      "image": "safety-marmot-ppe.png",
-      "imageAlt": "Safety marmot wearing splash goggles, gloves, a fastened laboratory coat, long trousers and closed shoes.",
-      "imageCaption": "Choose protection for the actual task. Safety marmot teaching illustration."
+      "image": "marmot-ppe-labeled.jpg",
+      "imageAlt": "Safety marmot with leader lines identifying splash goggles, task-appropriate gloves, fastened lab coat, long trousers and closed shoes.",
+      "imageCaption": "Choose the required eye, hand and clothing protection for the task."
     },
     {
       "title": "Labels and safety information",
@@ -328,8 +328,8 @@ window.COURSE = {
             "glove-removal-2-v2.jpg",
             "glove-removal-3.jpg",
             "glove-removal-4-v2.jpg",
-            "glove-removal-5.jpg",
-            "glove-removal-6.jpg",
+            "glove-removal-5-v2.jpg",
+            "glove-removal-6-v2.jpg",
             "glove-removal-7.jpg"
           ]
         },
@@ -343,8 +343,8 @@ window.COURSE = {
             "Keep your head and body outside the opening. Position work at least 15 cm back from the front opening, following the approved setup. Keep airflow openings clear and avoid overcrowding.",
             "If the indicator is abnormal, an alarm sounds or ventilation fails, stop safely and notify the responsible person."
           ],
-          "image": "fume-hood-position.svg",
-          "imageAlt": "Side-view fume-hood sketch: head outside the opening, sash at marked operating position, apparatus inside the working zone and clear airflow.",
+          "image": "marmot-fume-hood.jpg",
+          "imageAlt": "Safety marmot working at a chemical fume hood with head outside, sash at the marked position, apparatus inside and airflow openings clear.",
           "imageCaption": "Positioning principles. Use the sash marking and approved working zone on your actual hood."
         },
         {
@@ -418,7 +418,8 @@ window.COURSE = {
           "after": "The card communicates who is responsible, the recorded schedule and relevant chemical hazards. It does not replace the SDS, risk assessment, equipment training or emergency instructions.",
           "image": "experiment-card-hires.jpg",
           "imageAlt": "An IMS experiment card with experiment information, name/phone, start/end times, chemicals and hazard checkboxes.",
-          "imageCaption": "Complete the card and display it beside the setup, where other users can read it."
+          "imageCaption": "Complete the card and display it beside the setup, where other users can read it.",
+          "fullSize": true
         },
         {
           "title": "Prepare the workspace",
@@ -595,7 +596,6 @@ window.COURSE = {
       "reference": "2 (pp. 20–22) and 3 (pp. 37–39), with 4 (p. 53)",
       "figure": "waste.svg",
       "figureAlt": "Check waste identity and compatibility before choosing a stream",
-      "imagePlaceholder": "Insert image: Approved compatible storage and correctly labeled waste containers (ACS chapters 2–3).",
       "imsReference": "2.2, 2.5 and Appendices D–E",
       "videos": []
     },
@@ -621,11 +621,18 @@ window.COURSE = {
           "text": "In the Netherlands, 112 is the national emergency number for urgent police, fire or ambulance assistance. UT publishes 053 489 2222 (+31 53 489 2222) as its campus emergency number, or 2222 internally. Know both numbers and follow the campus emergency instructions. Give your building, room, incident and any injuries when calling. During orientation, verify how to call from your phone. On a building alarm, follow the evacuation route to the designated assembly point and do not re-enter until authorized. Use the designated evacuation stairs rather than elevators. Never delay evacuation to shut down equipment or fight a fire; take an action only when the emergency procedure permits it and it is safe.",
           "scope": "ut",
           "imsChapter": "1",
-          "imagePlaceholder": "Insert image: a high-resolution current UT emergency sign. Use a sign applicable to the learner’s building."
+          "image": "ut-emergency-sign-current.jpg",
+          "imageAlt": "Posted UT emergency sign showing campus emergency number 053-4892222.",
+          "imageCaption": "Example of a posted UT emergency sign. Follow the assembly point and instructions posted for your current location.",
+          "fullSize": true
         },
         {
           "title": "Use the eyewash and safety shower",
-          "text": "Learn how to activate the actual equipment before an incident. For an ordinary liquid chemical splash in the eyes, start flushing immediately, hold the eyelids open and obtain help. Remove contact lenses if readily possible without delaying flushing. For substantial skin or clothing contamination, use the safety shower and remove contaminated clothing while rinsing. General first aid commonly requires at least 15 minutes of flushing, and some chemicals require longer or specific treatment: follow the emergency procedure, SDS and responder instructions. Suspected HF exposure requires immediate specialist emergency care; a routine rinse alone is not sufficient treatment."
+          "text": "Learn how to activate the actual equipment before an incident. For an ordinary liquid chemical splash in the eyes, start flushing immediately, hold the eyelids open and obtain help. Remove contact lenses if readily possible without delaying flushing. For substantial skin or clothing contamination, use the safety shower and remove contaminated clothing while rinsing. General first aid commonly requires at least 15 minutes of flushing, and some chemicals require longer or specific treatment: follow the emergency procedure, SDS and responder instructions. Suspected HF exposure requires immediate specialist emergency care; a routine rinse alone is not sufficient treatment.",
+          "image": "carre-third-floor-safety-shower.jpg",
+          "imageAlt": "Safety shower and pull handle in the third-floor corridor of the Carré building.",
+          "imageCaption": "Example: safety shower in the third-floor corridor of the Carré building. Locate and learn to operate the equipment serving your own work area.",
+          "fullSize": true
         },
         {
           "title": "Clothing fires and other injuries",
@@ -681,7 +688,6 @@ window.COURSE = {
       "reference": "5 (pp. 58–69)",
       "figure": "emergency.svg",
       "figureAlt": "Warn others, move away from danger and call for help",
-      "imagePlaceholder": "Insert image: The actual eyewash, safety shower and alarm point (ACS chapter 5).",
       "imsReference": "1.2–1.3 and current S&T incident instructions",
       "videos": [
         {
