@@ -327,7 +327,7 @@ window.COURSE = {
             "glove-removal-1.jpg",
             "glove-removal-2-v2.jpg",
             "glove-removal-3.jpg",
-            "glove-removal-4.jpg",
+            "glove-removal-4-v2.jpg",
             "glove-removal-5.jpg",
             "glove-removal-6.jpg",
             "glove-removal-7.jpg"
