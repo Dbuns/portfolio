@@ -343,7 +343,7 @@ window.COURSE = {
             "Keep your head and body outside the opening. Position work at least 15 cm back from the front opening, following the approved setup. Keep airflow openings clear and avoid overcrowding.",
             "If the indicator is abnormal, an alarm sounds or ventilation fails, stop safely and notify the responsible person."
           ],
-          "image": "marmot-fume-hood.jpg",
+          "image": "marmot-fume-hood-v2.jpg",
           "imageAlt": "Safety marmot working at a chemical fume hood with head outside, sash at the marked position, apparatus inside and airflow openings clear.",
           "imageCaption": "Positioning principles. Use the sash marking and approved working zone on your actual hood."
         },
