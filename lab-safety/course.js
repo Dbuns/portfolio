@@ -325,7 +325,7 @@ window.COURSE = {
           "sourceLabel": "See the CDC glove-removal illustrations (hand technique; chemical waste rules remain local).",
           "stepImages": [
             "glove-removal-1.jpg",
-            "glove-removal-2.jpg",
+            "glove-removal-2-v2.jpg",
             "glove-removal-3.jpg",
             "glove-removal-4.jpg",
             "glove-removal-5.jpg",
