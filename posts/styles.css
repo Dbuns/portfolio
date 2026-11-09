@@ -64,6 +64,10 @@
     transform: scale(1.0);
 }
 
+.post img[src$="/track-splitter/thumb.png"] {
+    transform: scale(1.4);
+}
+
 .overlay {
     position: absolute;
     inset: 0;
