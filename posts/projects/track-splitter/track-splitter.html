@@ -26,6 +26,39 @@
 
     <article class="post-body">
         <section class="post-section">
+            <h1>Track Splitter</h1>
+
+            <p>I play drums in a band, and practising along with recordings is not always ideal. Sometimes the original drums get in the way of hearing what I’m playing. Other times, I want to listen closely to a particular drum part, and it would help to hear it separately from the rest of the song.</p>
+
+            <p>There are already apps for this, such as Moises, but I came across <a href="https://github.com/facebookresearch/demucs" target="_blank" rel="noopener noreferrer">Demucs</a> and decided to try building something around it.</p>
+
+            <p>I worked with ChatGPT on the interface and controls, testing the app and giving feedback as we went. Most of the changes came from using it: where things should sit, how to select and repeat a section, and how to adjust the mix without making the interface too cluttered.</p>
+
+            <p>Later, I found <a href="https://github.com/inagoy/drumsep" target="_blank" rel="noopener noreferrer">drumsep</a>, which separates a drum track into individual parts, and added that too. Track Splitter can now separate a song into its main instruments, then split the drums further into kick, snare, cymbals and toms.</p>
+
+            <p>This is what it looks like now:</p>
+
+            <figure class="fig-center fig-large">
+                <img src="practice-dark.png" alt="Track Splitter showing the waveform and instrument mixer in dark mode" loading="lazy">
+            </figure>
+
+            <p>The app currently supports:</p>
+
+            <ul>
+                <li>Separate volume, mute and solo controls for each instrument and drum part.</li>
+                <li>Named sections that can be selected for looping.</li>
+                <li>BPM estimation and tempo changes while preserving pitch, including −10/+10 BPM buttons for practice.</li>
+                <li>Saving songs, mixes and sections for later use.</li>
+                <li>Exporting the current mix as a WAV file.</li>
+                <li>Light and dark themes.</li>
+            </ul>
+
+            <p>Audio processing runs locally, with models downloaded on first use.</p>
+
+            <p>After trying it on a few songs, I’m happy with how well the separation works, including the individual drum parts. The bass separation could still be a little cleaner, but overall it has been useful for practice.</p>
+
+            <p>For now, it is available for Windows. I may look into macOS and Linux at some point, but there are no plans for that yet.</p>
+
             <p>The project is available on GitHub:</p>
 
             <p><strong><a href="https://github.com/Dbuns/track-splitter" class="github-link" target="_blank" rel="noopener noreferrer">Track Splitter on GitHub</a></strong></p>
